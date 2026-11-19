@@ -1,0 +1,49 @@
+{
+  "archive_doi": "10.5281/zenodo.8115187",
+  "archive_md5": "0f1ad54ea13f45e750edde4bf401fd2a",
+  "input_mode": "verified_extracted_table",
+  "source_table": "datasets/HFCO2.csv",
+  "rows": 1419,
+  "unique_modelId_strings": 1415,
+  "duplicate_modelId_strings": {
+    "distilgpt2": 2,
+    "biomedical-ner-all": 4
+  },
+  "reconstructed_counts": {
+    "A": 37,
+    "B": 486,
+    "C": 826,
+    "D": 55,
+    "E": 15
+  },
+  "archived_notebook_counts": {
+    "A": 37,
+    "B": 486,
+    "C": 826,
+    "D": 55,
+    "E": 15
+  },
+  "counts_match": true,
+  "examples": [
+    {
+      "modelId": "distilgpt2",
+      "label": "D"
+    },
+    {
+      "modelId": "bloom",
+      "label": "D"
+    },
+    {
+      "modelId": "BERT-Banking77",
+      "label": "A"
+    },
+    {
+      "modelId": "distilgpt2",
+      "label": "D"
+    },
+    {
+      "modelId": "AI-image-detector",
+      "label": "B"
+    }
+  ]
+}

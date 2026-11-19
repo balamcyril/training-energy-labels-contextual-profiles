@@ -1,0 +1,69 @@
+{
+  "decision": "A2-D7",
+  "status": "candidates_not_adopted",
+  "retrieved_on": "2026-11-18",
+  "source_page": "https://ember-energy.org/data/yearly-electricity-data/",
+  "source_url": "https://files.ember-energy.org/public-downloads/generation/outputs/release_generation_yearly_global.csv",
+  "source_last_modified": "Tue, 17 Nov 2026 18:34:40 GMT",
+  "source_bytes": 16149377,
+  "source_sha256": "43db1b75e3ae16eff5fc62a4bfa1f10876efa24af953e0069a939441ea95c616",
+  "methodology_url": "https://files.ember-energy.org/public-downloads/ember_electricity_data_methodology.pdf",
+  "methodology_last_modified": "Tue, 22 Sep 2026 11:58:42 GMT",
+  "latest_year_by_area": {
+    "Kenya": 2025,
+    "Cameroon": 2024,
+    "South Africa": 2025
+  },
+  "latest_common_year": 2024,
+  "filter": {
+    "Area": [
+      "Kenya",
+      "Cameroon",
+      "South Africa"
+    ],
+    "Electricity source": "Total generation",
+    "metric": "Emissions intensity (gCO2e/kWh)"
+  },
+  "candidate_values": [
+    {
+      "Area": "Kenya",
+      "ISO 3 code": "KEN",
+      "Year": "2024",
+      "Emissions intensity (gCO2e/kWh)": "83.516"
+    },
+    {
+      "Area": "Cameroon",
+      "ISO 3 code": "CMR",
+      "Year": "2024",
+      "Emissions intensity (gCO2e/kWh)": "219.859"
+    },
+    {
+      "Area": "South Africa",
+      "ISO 3 code": "ZAF",
+      "Year": "2024",
+      "Emissions intensity (gCO2e/kWh)": "717.431"
+    }
+  ],
+  "files": [
+    {
+      "file": "ember_generation_yearly_global.csv.gz",
+      "bytes": 1956047,
+      "sha256": "f84f67e7989895400ad06f548a6cb355dd6468f0bc3cd77c9faa87d8fa15c8ec"
+    },
+    {
+      "file": "candidate_factors.csv",
+      "bytes": 980,
+      "sha256": "65ee8c31375a2f3d252497a32833c69540d5271e2176692a05ecf06eb33ff988"
+    },
+    {
+      "file": "candidate_generation_rows.csv",
+      "bytes": 8289,
+      "sha256": "f7f9a870176128363149bbb7ef7b49ebc0b877b930eb430aee525543040e2263"
+    },
+    {
+      "file": "ember_electricity_data_methodology.pdf",
+      "bytes": 1487777,
+      "sha256": "67c5eaac3bfbeb7e67bb786f9ea9680f67f6f26e75318560562ee52d439de908"
+    }
+  ]
+}

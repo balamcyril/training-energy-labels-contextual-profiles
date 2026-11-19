@@ -1,0 +1,36 @@
+{
+  "version": "0.1",
+  "date": "2026-11-19",
+  "status": "working numerical protocol; corpus and quality-target interpretation accepted by author; simulation constants are declared study assumptions",
+  "quality_target_f1": 84.0,
+  "reference_country": "Cameroon",
+  "quantile_probabilities": [0.2, 0.4, 0.6, 0.8],
+  "quantile_method": "linear interpolation at (n-1)*p; equality belongs to lower-cost class",
+  "weights_T_E_C": [2, 1, 1],
+  "weight_sensitivity": [[1, 1, 1], [2, 1, 1], [3, 1, 1], [2, 2, 1], [2, 1, 2]],
+  "rounding": "half up: floor(score+0.5); A=0,...,E=4",
+  "budget_reference": "median of 49 reference mean GPU energies",
+  "budget_multipliers": [0.75, 1.0, 1.25],
+  "outage": {
+    "on_s": 7200,
+    "off_s": 1800,
+    "horizon_s": 86400,
+    "checkpoint_interval_work_s": 900,
+    "checkpoint_cost_s": 5,
+    "restart_cost_s": 30
+  },
+  "outage_sensitivity": [
+    {"name": "on_1h", "on_s": 3600},
+    {"name": "on_4h", "on_s": 14400},
+    {"name": "checkpoint_30min", "checkpoint_interval_work_s": 1800},
+    {"name": "checkpoint_cost_30s", "checkpoint_cost_s": 30},
+    {"name": "restart_120s", "restart_cost_s": 120}
+  ],
+  "combined_example": "central outage with checkpoints, median energy budget and South Africa intensity; discussion only",
+  "supply_type_variant": {
+    "status": "illustrative factor sensitivity, not a harmonized LCA comparison or local measurements; transfer losses set to zero as an explicit simplifying assumption",
+    "source": "https://doi.org/10.1016/j.seta.2021.101471",
+    "factors_g_per_kwh": {"PV_low": 100, "PV_midpoint_assumption": 130, "PV_high": 160, "Diesel": 1140},
+    "caution": "Published abstract reports PV range and diesel value for West African mini-grids including battery alternatives. Exact installation, delivery boundary and losses could not be fully verified; these proxies must not support a comparative LCA claim."
+  }
+}

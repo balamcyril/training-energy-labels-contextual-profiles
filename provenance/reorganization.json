@@ -1,0 +1,12 @@
+{
+  "package_version": "0.1.0",
+  "numerical_protocol_version": "0.1",
+  "scope": "Path relocation, standalone execution and provenance updates only; no numerical-method changes",
+  "original_metadata": [
+    "original_manifest.json",
+    "original_summary.json",
+    "original_gaissa_counts.json"
+  ],
+  "verification": "scripts/reproduce.py --check compares frozen CSV/configuration checksums, scientific summary values, historical counts, numerical table contents and plotted values",
+  "source_metadata_change": "results/summary.json now records package-relative POSIX paths and hashes for the relocated scripts. The original scientific values are unchanged."
+}

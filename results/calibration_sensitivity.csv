@@ -1,0 +1,8 @@
+excluded_batch,calibration_n,evaluated_n,changed_labels,recommended
+8,42,49,6,bert_b16_p175
+12,42,49,8,bert_b12_p200;bert_b16_p175
+16,42,49,6,bert_b12_p175;bert_b16_p175
+24,42,49,4,bert_b12_p150;bert_b12_p175;bert_b12_p200;bert_b12_p225;bert_b16_p150;bert_b16_p175;bert_b16_p200;bert_b16_p225;bert_b8_p150;bert_b8_p175;bert_b8_p200;bert_b8_p225
+32,42,49,2,bert_b12_p150;bert_b12_p175;bert_b12_p200;bert_b12_p225;bert_b16_p150;bert_b16_p175;bert_b16_p200;bert_b16_p225;bert_b8_p150;bert_b8_p175;bert_b8_p200;bert_b8_p225
+48,42,49,5,bert_b12_p150;bert_b12_p175;bert_b12_p200;bert_b12_p225;bert_b16_p150;bert_b16_p175;bert_b16_p200;bert_b16_p225;bert_b8_p150;bert_b8_p175;bert_b8_p200;bert_b8_p225
+56,42,49,5,bert_b12_p150;bert_b12_p175;bert_b12_p200;bert_b12_p225;bert_b16_p150;bert_b16_p175;bert_b16_p200;bert_b16_p225;bert_b8_p150;bert_b8_p175;bert_b8_p200;bert_b8_p225

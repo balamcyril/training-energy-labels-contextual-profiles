@@ -1,0 +1,680 @@
+{
+  "scope": "Pinned historical SQuAD-IT QA logs; no model execution or scenario simulation",
+  "reader": {
+    "tensorboard": "2.21.0",
+    "python": "3.13.1"
+  },
+  "interpretation": "Wall-clock spans describe recorded events, not validated training time. A tag-name search does not establish the completeness of physical measurements.",
+  "models": [
+    {
+      "model_id": "gsarti/it5-small-question-answering",
+      "revision": "6acbb88d78c77ebeceb0fbfc0453ddcff1814296",
+      "source_url": "https://huggingface.co/gsarti/it5-small-question-answering/resolve/6acbb88d78c77ebeceb0fbfc0453ddcff1814296/events.out.tfevents.1642301432.t1v-n-9e38d79e-w-0.1339296.0.v2",
+      "local_file": "logs/gsarti/it5-small-question-answering/events.out.tfevents.1642301432.t1v-n-9e38d79e-w-0.1339296.0.v2",
+      "file_bytes": 1475470,
+      "sha256": "222c20e19a0b135bdc62d4add527f487abeea9322e73fead9bf41520ad89eb01",
+      "decoded_events": 20083,
+      "observed_log_span_seconds": 1131.4932339191437,
+      "log_span_is_training_runtime": false,
+      "energy_related_tags": [],
+      "time_related_tags": [
+        "train_time"
+      ],
+      "tags": {
+        "train_time": {
+          "count": 58,
+          "first": {
+            "step": 200,
+            "wall_time": 1642301563.81936,
+            "scalar": 130.66854858398438
+          },
+          "last": {
+            "step": 3200,
+            "wall_time": 1642302563.155165,
+            "scalar": 2027.978515625
+          }
+        },
+        "train_learning_rate": {
+          "count": 10000,
+          "first": {
+            "step": 0,
+            "wall_time": 1642301563.94736,
+            "scalar": 0.0
+          },
+          "last": {
+            "step": 3200,
+            "wall_time": 1642302563.390071,
+            "scalar": 6.747335646650754e-06
+          }
+        },
+        "train_loss": {
+          "count": 10000,
+          "first": {
+            "step": 0,
+            "wall_time": 1642301564.055911,
+            "scalar": 9.299860000610352
+          },
+          "last": {
+            "step": 3200,
+            "wall_time": 1642302563.493234,
+            "scalar": 0.24424177408218384
+          }
+        },
+        "eval_loss": {
+          "count": 4,
+          "first": {
+            "step": 2000,
+            "wall_time": 1642302084.887922,
+            "scalar": 0.38154488801956177
+          },
+          "last": {
+            "step": 2000,
+            "wall_time": 1642302298.16883,
+            "scalar": 0.3920997977256775
+          }
+        },
+        "eval_rouge1": {
+          "count": 4,
+          "first": {
+            "step": 2000,
+            "wall_time": 1642302084.888638,
+            "scalar": 70.55979919433594
+          },
+          "last": {
+            "step": 2000,
+            "wall_time": 1642302298.169499,
+            "scalar": 71.53389739990234
+          }
+        },
+        "eval_rouge2": {
+          "count": 4,
+          "first": {
+            "step": 2000,
+            "wall_time": 1642302084.889151,
+            "scalar": 39.65549850463867
+          },
+          "last": {
+            "step": 2000,
+            "wall_time": 1642302298.170021,
+            "scalar": 40.28889846801758
+          }
+        },
+        "eval_rougeL": {
+          "count": 4,
+          "first": {
+            "step": 2000,
+            "wall_time": 1642302084.889672,
+            "scalar": 70.5365982055664
+          },
+          "last": {
+            "step": 2000,
+            "wall_time": 1642302298.170582,
+            "scalar": 71.5062026977539
+          }
+        },
+        "eval_rougeLsum": {
+          "count": 4,
+          "first": {
+            "step": 2000,
+            "wall_time": 1642302084.89017,
+            "scalar": 70.50969696044922
+          },
+          "last": {
+            "step": 2000,
+            "wall_time": 1642302298.17116,
+            "scalar": 71.49639892578125
+          }
+        },
+        "eval_gen_len": {
+          "count": 4,
+          "first": {
+            "step": 2000,
+            "wall_time": 1642302084.890685,
+            "scalar": 8.420900344848633
+          },
+          "last": {
+            "step": 2000,
+            "wall_time": 1642302298.17172,
+            "scalar": 8.206100463867188
+          }
+        }
+      }
+    },
+    {
+      "model_id": "gsarti/it5-base-question-answering",
+      "revision": "42f9cc104612a173c5ffb335c2c77b9a94c32dc7",
+      "source_url": "https://huggingface.co/gsarti/it5-base-question-answering/resolve/42f9cc104612a173c5ffb335c2c77b9a94c32dc7/events.out.tfevents.1642298516.t1v-n-9e38d79e-w-0.1334796.0.v2",
+      "local_file": "logs/gsarti/it5-base-question-answering/events.out.tfevents.1642298516.t1v-n-9e38d79e-w-0.1334796.0.v2",
+      "file_bytes": 1475470,
+      "sha256": "50a3dcde42b24c20ab5bd667dad69e2c234df47e11e57684f283454ffb91a5e0",
+      "decoded_events": 20083,
+      "observed_log_span_seconds": 2842.695547103882,
+      "log_span_is_training_runtime": false,
+      "energy_related_tags": [],
+      "time_related_tags": [
+        "train_time"
+      ],
+      "tags": {
+        "train_time": {
+          "count": 58,
+          "first": {
+            "step": 200,
+            "wall_time": 1642298744.859666,
+            "scalar": 227.85107421875
+          },
+          "last": {
+            "step": 3200,
+            "wall_time": 1642301358.119747,
+            "scalar": 5057.91748046875
+          }
+        },
+        "train_learning_rate": {
+          "count": 10000,
+          "first": {
+            "step": 0,
+            "wall_time": 1642298745.075518,
+            "scalar": 0.0
+          },
+          "last": {
+            "step": 3200,
+            "wall_time": 1642301358.592365,
+            "scalar": 6.747335646650754e-06
+          }
+        },
+        "train_loss": {
+          "count": 10000,
+          "first": {
+            "step": 0,
+            "wall_time": 1642298745.185506,
+            "scalar": 9.081206321716309
+          },
+          "last": {
+            "step": 3200,
+            "wall_time": 1642301358.695547,
+            "scalar": 0.04170869290828705
+          }
+        },
+        "eval_loss": {
+          "count": 4,
+          "first": {
+            "step": 2000,
+            "wall_time": 1642300095.976001,
+            "scalar": 0.3787822723388672
+          },
+          "last": {
+            "step": 2000,
+            "wall_time": 1642300626.146948,
+            "scalar": 0.4173908233642578
+          }
+        },
+        "eval_rouge1": {
+          "count": 4,
+          "first": {
+            "step": 2000,
+            "wall_time": 1642300095.976731,
+            "scalar": 75.41739654541016
+          },
+          "last": {
+            "step": 2000,
+            "wall_time": 1642300626.147742,
+            "scalar": 76.15799713134766
+          }
+        },
+        "eval_rouge2": {
+          "count": 4,
+          "first": {
+            "step": 2000,
+            "wall_time": 1642300095.977244,
+            "scalar": 42.32600021362305
+          },
+          "last": {
+            "step": 2000,
+            "wall_time": 1642300626.148344,
+            "scalar": 42.58760070800781
+          }
+        },
+        "eval_rougeL": {
+          "count": 4,
+          "first": {
+            "step": 2000,
+            "wall_time": 1642300095.977807,
+            "scalar": 75.44200134277344
+          },
+          "last": {
+            "step": 2000,
+            "wall_time": 1642300626.148933,
+            "scalar": 76.17620086669922
+          }
+        },
+        "eval_rougeLsum": {
+          "count": 4,
+          "first": {
+            "step": 2000,
+            "wall_time": 1642300095.978382,
+            "scalar": 75.44490051269531
+          },
+          "last": {
+            "step": 2000,
+            "wall_time": 1642300626.149524,
+            "scalar": 76.19779968261719
+          }
+        },
+        "eval_gen_len": {
+          "count": 4,
+          "first": {
+            "step": 2000,
+            "wall_time": 1642300095.979009,
+            "scalar": 7.33519983291626
+          },
+          "last": {
+            "step": 2000,
+            "wall_time": 1642300626.15012,
+            "scalar": 7.168300151824951
+          }
+        }
+      }
+    },
+    {
+      "model_id": "gsarti/it5-large-question-answering",
+      "revision": "1a9102e557a469141fa9fee356b99e76553564de",
+      "source_url": "https://huggingface.co/gsarti/it5-large-question-answering/resolve/1a9102e557a469141fa9fee356b99e76553564de/events.out.tfevents.1642302618.t1v-n-9e38d79e-w-0.1341939.0.v2",
+      "local_file": "logs/gsarti/it5-large-question-answering/events.out.tfevents.1642302618.t1v-n-9e38d79e-w-0.1341939.0.v2",
+      "file_bytes": 2966716,
+      "sha256": "32fb4e1aafdf7b760286d04e613b2a877fc90eb24d122687d483dae889efe73d",
+      "decoded_events": 40372,
+      "observed_log_span_seconds": 10120.132052898407,
+      "log_span_is_training_runtime": false,
+      "energy_related_tags": [],
+      "time_related_tags": [
+        "train_time"
+      ],
+      "tags": {
+        "train_time": {
+          "count": 57,
+          "first": {
+            "step": 400,
+            "wall_time": 1642303112.402926,
+            "scalar": 492.4975280761719
+          },
+          "last": {
+            "step": 11600,
+            "wall_time": 1642312737.004591,
+            "scalar": 18390.76953125
+          }
+        },
+        "train_learning_rate": {
+          "count": 20145,
+          "first": {
+            "step": 0,
+            "wall_time": 1642303113.10251,
+            "scalar": 0.0
+          },
+          "last": {
+            "step": 11600,
+            "wall_time": 1642312737.924168,
+            "scalar": 5.398779876486515e-07
+          }
+        },
+        "train_loss": {
+          "count": 20145,
+          "first": {
+            "step": 0,
+            "wall_time": 1642303113.32692,
+            "scalar": 8.630622863769531
+          },
+          "last": {
+            "step": 11600,
+            "wall_time": 1642312738.132053,
+            "scalar": 0.11822758615016937
+          }
+        },
+        "eval_loss": {
+          "count": 4,
+          "first": {
+            "step": 4000,
+            "wall_time": 1642306080.489603,
+            "scalar": 0.29471468925476074
+          },
+          "last": {
+            "step": 8000,
+            "wall_time": 1642310040.853247,
+            "scalar": 0.2900707721710205
+          }
+        },
+        "eval_rouge1": {
+          "count": 4,
+          "first": {
+            "step": 4000,
+            "wall_time": 1642306080.490327,
+            "scalar": 76.53569793701172
+          },
+          "last": {
+            "step": 8000,
+            "wall_time": 1642310040.853956,
+            "scalar": 78.09310150146484
+          }
+        },
+        "eval_rouge2": {
+          "count": 4,
+          "first": {
+            "step": 4000,
+            "wall_time": 1642306080.490891,
+            "scalar": 43.17919921875
+          },
+          "last": {
+            "step": 8000,
+            "wall_time": 1642310040.854496,
+            "scalar": 44.00699996948242
+          }
+        },
+        "eval_rougeL": {
+          "count": 4,
+          "first": {
+            "step": 4000,
+            "wall_time": 1642306080.491418,
+            "scalar": 76.52860260009766
+          },
+          "last": {
+            "step": 8000,
+            "wall_time": 1642310040.855109,
+            "scalar": 78.07879638671875
+          }
+        },
+        "eval_rougeLsum": {
+          "count": 4,
+          "first": {
+            "step": 4000,
+            "wall_time": 1642306080.491939,
+            "scalar": 76.58529663085938
+          },
+          "last": {
+            "step": 8000,
+            "wall_time": 1642310040.855729,
+            "scalar": 78.08589935302734
+          }
+        },
+        "eval_gen_len": {
+          "count": 4,
+          "first": {
+            "step": 4000,
+            "wall_time": 1642306080.492454,
+            "scalar": 7.7855000495910645
+          },
+          "last": {
+            "step": 8000,
+            "wall_time": 1642310040.856257,
+            "scalar": 7.557799816131592
+          }
+        }
+      }
+    },
+    {
+      "model_id": "gsarti/mt5-small-question-answering",
+      "revision": "2db028bf1d12026e25024cf42e777ce509534e4b",
+      "source_url": "https://huggingface.co/gsarti/mt5-small-question-answering/resolve/2db028bf1d12026e25024cf42e777ce509534e4b/events.out.tfevents.1642648268.t1v-n-9e38d79e-w-0.1764917.0.v2",
+      "local_file": "logs/gsarti/mt5-small-question-answering/events.out.tfevents.1642648268.t1v-n-9e38d79e-w-0.1764917.0.v2",
+      "file_bytes": 1475470,
+      "sha256": "ec2837ee504bfe5be9c08505d62fac85cfc33076887284ccfb1dee601473701a",
+      "decoded_events": 20083,
+      "observed_log_span_seconds": 1823.5870900154114,
+      "log_span_is_training_runtime": false,
+      "energy_related_tags": [],
+      "time_related_tags": [
+        "train_time"
+      ],
+      "tags": {
+        "train_time": {
+          "count": 58,
+          "first": {
+            "step": 200,
+            "wall_time": 1642648409.632227,
+            "scalar": 140.54849243164062
+          },
+          "last": {
+            "step": 3200,
+            "wall_time": 1642650091.158322,
+            "scalar": 3062.423583984375
+          }
+        },
+        "train_learning_rate": {
+          "count": 10000,
+          "first": {
+            "step": 0,
+            "wall_time": 1642648409.848628,
+            "scalar": 0.0
+          },
+          "last": {
+            "step": 3200,
+            "wall_time": 1642650091.481919,
+            "scalar": 6.747335646650754e-06
+          }
+        },
+        "train_loss": {
+          "count": 10000,
+          "first": {
+            "step": 0,
+            "wall_time": 1642648409.958156,
+            "scalar": 25.775875091552734
+          },
+          "last": {
+            "step": 3200,
+            "wall_time": 1642650091.58709,
+            "scalar": 0.5656633973121643
+          }
+        },
+        "eval_loss": {
+          "count": 4,
+          "first": {
+            "step": 2000,
+            "wall_time": 1642649277.878315,
+            "scalar": 0.7544048428535461
+          },
+          "last": {
+            "step": 2000,
+            "wall_time": 1642649629.115357,
+            "scalar": 0.7139285802841187
+          }
+        },
+        "eval_rouge1": {
+          "count": 4,
+          "first": {
+            "step": 2000,
+            "wall_time": 1642649277.879049,
+            "scalar": 57.551300048828125
+          },
+          "last": {
+            "step": 2000,
+            "wall_time": 1642649629.11608,
+            "scalar": 60.61589813232422
+          }
+        },
+        "eval_rouge2": {
+          "count": 4,
+          "first": {
+            "step": 2000,
+            "wall_time": 1642649277.879588,
+            "scalar": 31.534900665283203
+          },
+          "last": {
+            "step": 2000,
+            "wall_time": 1642649629.116615,
+            "scalar": 33.21329879760742
+          }
+        },
+        "eval_rougeL": {
+          "count": 4,
+          "first": {
+            "step": 2000,
+            "wall_time": 1642649277.880102,
+            "scalar": 57.454898834228516
+          },
+          "last": {
+            "step": 2000,
+            "wall_time": 1642649629.117123,
+            "scalar": 60.51029968261719
+          }
+        },
+        "eval_rougeLsum": {
+          "count": 4,
+          "first": {
+            "step": 2000,
+            "wall_time": 1642649277.880621,
+            "scalar": 57.462100982666016
+          },
+          "last": {
+            "step": 2000,
+            "wall_time": 1642649629.117643,
+            "scalar": 60.518699645996094
+          }
+        },
+        "eval_gen_len": {
+          "count": 4,
+          "first": {
+            "step": 2000,
+            "wall_time": 1642649277.881132,
+            "scalar": 9.936200141906738
+          },
+          "last": {
+            "step": 2000,
+            "wall_time": 1642649629.118148,
+            "scalar": 9.46500015258789
+          }
+        }
+      }
+    },
+    {
+      "model_id": "gsarti/mt5-base-question-answering",
+      "revision": "2220b747c65156a3569f940cf6249441b93ca4ad",
+      "source_url": "https://huggingface.co/gsarti/mt5-base-question-answering/resolve/2220b747c65156a3569f940cf6249441b93ca4ad/events.out.tfevents.1642650166.t1v-n-9e38d79e-w-0.1768311.0.v2",
+      "local_file": "logs/gsarti/mt5-base-question-answering/events.out.tfevents.1642650166.t1v-n-9e38d79e-w-0.1768311.0.v2",
+      "file_bytes": 2966716,
+      "sha256": "826aa6d42c586b03dac7bda4198d73dad2afd9567700039cde29145b1aea92ff",
+      "decoded_events": 40372,
+      "observed_log_span_seconds": 5250.872184038162,
+      "log_span_is_training_runtime": false,
+      "energy_related_tags": [],
+      "time_related_tags": [
+        "train_time"
+      ],
+      "tags": {
+        "train_time": {
+          "count": 57,
+          "first": {
+            "step": 400,
+            "wall_time": 1642650428.605819,
+            "scalar": 260.7780456542969
+          },
+          "last": {
+            "step": 11600,
+            "wall_time": 1642655416.096839,
+            "scalar": 9319.8212890625
+          }
+        },
+        "train_learning_rate": {
+          "count": 20145,
+          "first": {
+            "step": 0,
+            "wall_time": 1642650428.957407,
+            "scalar": 0.0
+          },
+          "last": {
+            "step": 11600,
+            "wall_time": 1642655416.663343,
+            "scalar": 5.398779876486515e-07
+          }
+        },
+        "train_loss": {
+          "count": 20145,
+          "first": {
+            "step": 0,
+            "wall_time": 1642650429.18089,
+            "scalar": 16.735313415527344
+          },
+          "last": {
+            "step": 11600,
+            "wall_time": 1642655416.872184,
+            "scalar": 0.3317734897136688
+          }
+        },
+        "eval_loss": {
+          "count": 4,
+          "first": {
+            "step": 4000,
+            "wall_time": 1642651961.747743,
+            "scalar": 0.7657911777496338
+          },
+          "last": {
+            "step": 8000,
+            "wall_time": 1642654036.988707,
+            "scalar": 0.4880097508430481
+          }
+        },
+        "eval_rouge1": {
+          "count": 4,
+          "first": {
+            "step": 4000,
+            "wall_time": 1642651961.748434,
+            "scalar": 56.34239959716797
+          },
+          "last": {
+            "step": 8000,
+            "wall_time": 1642654036.989377,
+            "scalar": 73.52359771728516
+          }
+        },
+        "eval_rouge2": {
+          "count": 4,
+          "first": {
+            "step": 4000,
+            "wall_time": 1642651961.748971,
+            "scalar": 31.01799964904785
+          },
+          "last": {
+            "step": 8000,
+            "wall_time": 1642654036.989993,
+            "scalar": 41.00019836425781
+          }
+        },
+        "eval_rougeL": {
+          "count": 4,
+          "first": {
+            "step": 4000,
+            "wall_time": 1642651961.749498,
+            "scalar": 56.266998291015625
+          },
+          "last": {
+            "step": 8000,
+            "wall_time": 1642654036.99059,
+            "scalar": 73.48670196533203
+          }
+        },
+        "eval_rougeLsum": {
+          "count": 4,
+          "first": {
+            "step": 4000,
+            "wall_time": 1642651961.750113,
+            "scalar": 56.246498107910156
+          },
+          "last": {
+            "step": 8000,
+            "wall_time": 1642654036.991196,
+            "scalar": 73.48889923095703
+          }
+        },
+        "eval_gen_len": {
+          "count": 4,
+          "first": {
+            "step": 4000,
+            "wall_time": 1642651961.750716,
+            "scalar": 10.887999534606934
+          },
+          "last": {
+            "step": 8000,
+            "wall_time": 1642654036.991786,
+            "scalar": 7.083799839019775
+          }
+        }
+      }
+    }
+  ]
+}

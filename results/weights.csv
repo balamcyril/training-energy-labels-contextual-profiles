@@ -1,0 +1,46 @@
+profile,weights,recommended,eligible
+budget_0.75,1:1:1,,0
+budget_0.75,2:1:1,,0
+budget_0.75,3:1:1,,0
+budget_0.75,2:2:1,,0
+budget_0.75,2:1:2,,0
+budget_1,1:1:1,bert_b12_p175;bert_b16_p175;bert_b8_p175,25
+budget_1,2:1:1,bert_b12_p150;bert_b12_p175;bert_b12_p200;bert_b12_p225;bert_b16_p150;bert_b16_p175;bert_b16_p200;bert_b16_p225;bert_b8_p150;bert_b8_p175;bert_b8_p200;bert_b8_p225,25
+budget_1,3:1:1,bert_b12_p200;bert_b16_p200;bert_b8_p200,25
+budget_1,2:2:1,bert_b12_p175;bert_b16_p175;bert_b8_p175,25
+budget_1,2:1:2,bert_b12_p175;bert_b16_p175;bert_b8_p175,25
+budget_1.25,1:1:1,bert_b12_p175;bert_b16_p175;bert_b8_p175,49
+budget_1.25,2:1:1,bert_b12_p150;bert_b12_p175;bert_b12_p200;bert_b12_p225;bert_b16_p150;bert_b16_p175;bert_b16_p200;bert_b16_p225;bert_b8_p150;bert_b8_p175;bert_b8_p200;bert_b8_p225,49
+budget_1.25,3:1:1,bert_b12_p200;bert_b16_p200;bert_b8_p200,49
+budget_1.25,2:2:1,bert_b12_p175;bert_b16_p175;bert_b8_p175,49
+budget_1.25,2:1:2,bert_b12_p175;bert_b16_p175;bert_b8_p175,49
+carbon_Cameroon,1:1:1,bert_b12_p175;bert_b16_p175;bert_b8_p175,49
+carbon_Cameroon,2:1:1,bert_b12_p150;bert_b12_p175;bert_b12_p200;bert_b12_p225;bert_b16_p150;bert_b16_p175;bert_b16_p200;bert_b16_p225;bert_b8_p150;bert_b8_p175;bert_b8_p200;bert_b8_p225,49
+carbon_Cameroon,3:1:1,bert_b12_p200;bert_b16_p200;bert_b8_p200,49
+carbon_Cameroon,2:2:1,bert_b12_p175;bert_b16_p175;bert_b8_p175,49
+carbon_Cameroon,2:1:2,bert_b12_p175;bert_b16_p175;bert_b8_p175,49
+carbon_Kenya,1:1:1,bert_b12_p175;bert_b12_p200;bert_b16_p175;bert_b16_p200;bert_b8_p175;bert_b8_p200,49
+carbon_Kenya,2:1:1,bert_b12_p200;bert_b16_p200;bert_b8_p200,49
+carbon_Kenya,3:1:1,bert_b12_p200;bert_b12_p225;bert_b16_p200;bert_b16_p225;bert_b8_p200;bert_b8_p225,49
+carbon_Kenya,2:2:1,bert_b12_p175;bert_b12_p200;bert_b16_p175;bert_b16_p200;bert_b8_p175;bert_b8_p200,49
+carbon_Kenya,2:1:2,bert_b12_p175;bert_b12_p200;bert_b12_p225;bert_b16_p175;bert_b16_p200;bert_b16_p225;bert_b8_p175;bert_b8_p200;bert_b8_p225,49
+carbon_South Africa,1:1:1,bert_b12_p125;bert_b12_p150;bert_b12_p175;bert_b12_p200;bert_b12_p225;bert_b12_p250;bert_b16_p125;bert_b16_p150;bert_b16_p175;bert_b16_p200;bert_b16_p225;bert_b16_p250;bert_b32_p175;bert_b32_p200;bert_b8_p125;bert_b8_p150;bert_b8_p175;bert_b8_p200;bert_b8_p225;bert_b8_p250,49
+carbon_South Africa,2:1:1,bert_b12_p200;bert_b16_p200;bert_b8_p200,49
+carbon_South Africa,3:1:1,bert_b12_p175;bert_b12_p200;bert_b12_p225;bert_b12_p250;bert_b16_p175;bert_b16_p200;bert_b16_p225;bert_b16_p250;bert_b8_p175;bert_b8_p200;bert_b8_p225;bert_b8_p250,49
+carbon_South Africa,2:2:1,bert_b12_p175;bert_b12_p200;bert_b16_p175;bert_b16_p200;bert_b8_p175;bert_b8_p200,49
+carbon_South Africa,2:1:2,bert_b12_p150;bert_b12_p175;bert_b12_p200;bert_b12_p225;bert_b12_p250;bert_b16_p150;bert_b16_p175;bert_b16_p200;bert_b16_p225;bert_b16_p250;bert_b32_p200;bert_b32_p250;bert_b8_p150;bert_b8_p175;bert_b8_p200;bert_b8_p225;bert_b8_p250,49
+outage_checkpoint,1:1:1,bert_b12_p175;bert_b12_p200;bert_b16_p200;bert_b8_p175,49
+outage_checkpoint,2:1:1,bert_b12_p200;bert_b16_p200,49
+outage_checkpoint,3:1:1,bert_b12_p200;bert_b16_p200;bert_b16_p225;bert_b16_p250,49
+outage_checkpoint,2:2:1,bert_b12_p175;bert_b12_p200;bert_b16_p200;bert_b8_p175,49
+outage_checkpoint,2:1:2,bert_b12_p175;bert_b12_p200;bert_b16_p200;bert_b8_p175,49
+outage_no_recovery,1:1:1,,0
+outage_no_recovery,2:1:1,,0
+outage_no_recovery,3:1:1,,0
+outage_no_recovery,2:2:1,,0
+outage_no_recovery,2:1:2,,0
+reference,1:1:1,bert_b12_p175;bert_b16_p175;bert_b8_p175,49
+reference,2:1:1,bert_b12_p150;bert_b12_p175;bert_b12_p200;bert_b12_p225;bert_b16_p150;bert_b16_p175;bert_b16_p200;bert_b16_p225;bert_b8_p150;bert_b8_p175;bert_b8_p200;bert_b8_p225,49
+reference,3:1:1,bert_b12_p200;bert_b16_p200;bert_b8_p200,49
+reference,2:2:1,bert_b12_p175;bert_b16_p175;bert_b8_p175,49
+reference,2:1:2,bert_b12_p175;bert_b16_p175;bert_b8_p175,49

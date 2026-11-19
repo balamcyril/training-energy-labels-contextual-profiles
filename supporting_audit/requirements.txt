@@ -1,0 +1,2 @@
+# Reader used for the pinned SQuAD-IT QA event-file audit; no ML training.
+tensorboard==2.21.0

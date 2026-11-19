@@ -1,0 +1,24 @@
+{
+  "doi": "10.5281/zenodo.8115187",
+  "record_url": "https://zenodo.org/records/8115187",
+  "version": "v3",
+  "license": "CC-BY-4.0",
+  "license_metadata_source": "https://zenodo.org/api/records/8115187",
+  "archive_md5": "0f1ad54ea13f45e750edde4bf401fd2a",
+  "archive_bytes": 76359282,
+  "members": {
+    "HFCO2.csv": {
+      "archive_member": "datasets/HFCO2.csv",
+      "sha256": "145889b17bd9fa1a602823a1d851e51d24432cbafbfd6107fe99cd2a2b12b28d"
+    },
+    "HFEmissionsAnalysis.ipynb": {
+      "archive_member": "code/Analysis/HFEmissionsAnalysis.ipynb",
+      "sha256": "84a67e25afc5fc77392320b2e17b5b0ea037faa0e8b8c2ab9084d1b94d395ffa"
+    },
+    "README.md": {
+      "archive_member": "README.md",
+      "sha256": "62684f7e38de1ec1f653ef2b33fc05860f61d14b2f50be0c321a432d4952a409"
+    }
+  },
+  "note": "Unmodified extracted members. Archive checksum verified before extraction. The archived notebook is retained for inspection and is not executed."
+}

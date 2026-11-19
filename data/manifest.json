@@ -1,0 +1,36 @@
+{
+  "version": "0.1",
+  "date": "2026-11-19",
+  "source_revision": "9604d1346215f820fb04983cb3df2468f9c873e4",
+  "paper": "https://www.usenix.org/conference/nsdi23/presentation/you",
+  "trace_url": "https://github.com/ml-energy/zeus/tree/9604d1346215f820fb04983cb3df2468f9c873e4/examples/research_reproducibility/zeus_nsdi23/trace",
+  "target_f1": 84.0,
+  "configurations": 49,
+  "reconstructed_rows": 490,
+  "training_paths_with_power_profiles": 70,
+  "excluded_training_batches_without_v100_power_profile": [
+    4
+  ],
+  "demo_selection": "Minimum batch 8, paper baseline 32, maximum batch 56; power limits 100 and 250 W. Selected by settings, not label outcomes.",
+  "units": {
+    "time": "s",
+    "energy": "kWh, GPU only",
+    "power": "W",
+    "quality": "validation F1 target, 0-100 scale"
+  },
+  "reconstruction": "time_s=target_epoch*time_per_epoch; energy_gpu_kwh=time_s*average_power_w/3600000",
+  "assumptions": [
+    "Profile reuse across training paths; epoch count independent of power limit, following Zeus.",
+    "Static configurations: no online optimizer exploration or JIT profiling cost added.",
+    "Ten training paths share one power profile per batch/power pair; they are not ten independent power measurements.",
+    "Target 84 is a reached threshold, not an exact final F1 score.",
+    "CPU, RAM, storage, cooling and hardware manufacture excluded."
+  ],
+  "source_sha256": {
+    "README.md": "6187c70a351133f8c03c7dff7a65c5500bd859b3f48355b7997a60c81ad39ea7",
+    "reproduction_README.md": "937afc836a4dd041cc75c3be274af6a2b625418d060049f2e38b26beefa4045d",
+    "simulate_source.py": "5e37566bcb105f2545aca2f64187c024e9f5e40f1537f9adeca38a01c5cb9769",
+    "summary_power_v100.csv": "f0b066dd1a451bd78f730e001ac3a7c411979bc7f0846f12c1a9fb604aa90628",
+    "summary_train.csv": "076b35615349ee624403006e5ad67fd9ebda92af690c7750f8bb0c2ab92c0cf4"
+  }
+}

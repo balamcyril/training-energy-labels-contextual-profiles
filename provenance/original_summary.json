@@ -1,0 +1,225 @@
+{
+  "version": "0.1",
+  "thresholds": {
+    "time_s": [
+      7248.769,
+      7808.2142,
+      8608.776,
+      11284.843900000002
+    ],
+    "energy_gpu_kwh": [
+      0.3548089523552063,
+      0.39034788665354514,
+      0.40792257484038313,
+      0.43418902327550696
+    ],
+    "carbon_g": [
+      78.00794145586332,
+      85.8214960117618,
+      89.6854493818318,
+      95.46036446832969
+    ]
+  },
+  "energy_reference_kwh": 0.40455421661087004,
+  "factors_g_per_kwh": {
+    "Kenya": 83.516,
+    "Cameroon": 219.859,
+    "South Africa": 717.431
+  },
+  "profiles": {
+    "budget_0.75": {
+      "eligible": 0,
+      "recommended": [],
+      "recommended_but_pareto_dominated": [],
+      "changed_labels": 0,
+      "evaluable_labels": 49
+    },
+    "budget_1": {
+      "eligible": 25,
+      "recommended": [
+        "bert_b12_p150",
+        "bert_b12_p175",
+        "bert_b12_p200",
+        "bert_b12_p225",
+        "bert_b16_p150",
+        "bert_b16_p175",
+        "bert_b16_p200",
+        "bert_b16_p225",
+        "bert_b8_p150",
+        "bert_b8_p175",
+        "bert_b8_p200",
+        "bert_b8_p225"
+      ],
+      "recommended_but_pareto_dominated": [
+        "bert_b8_p150",
+        "bert_b8_p175",
+        "bert_b8_p200",
+        "bert_b8_p225",
+        "bert_b16_p150"
+      ],
+      "changed_labels": 0,
+      "evaluable_labels": 49
+    },
+    "budget_1.25": {
+      "eligible": 49,
+      "recommended": [
+        "bert_b12_p150",
+        "bert_b12_p175",
+        "bert_b12_p200",
+        "bert_b12_p225",
+        "bert_b16_p150",
+        "bert_b16_p175",
+        "bert_b16_p200",
+        "bert_b16_p225",
+        "bert_b8_p150",
+        "bert_b8_p175",
+        "bert_b8_p200",
+        "bert_b8_p225"
+      ],
+      "recommended_but_pareto_dominated": [
+        "bert_b8_p150",
+        "bert_b8_p175",
+        "bert_b8_p200",
+        "bert_b8_p225",
+        "bert_b16_p150"
+      ],
+      "changed_labels": 0,
+      "evaluable_labels": 49
+    },
+    "carbon_Cameroon": {
+      "eligible": 49,
+      "recommended": [
+        "bert_b12_p150",
+        "bert_b12_p175",
+        "bert_b12_p200",
+        "bert_b12_p225",
+        "bert_b16_p150",
+        "bert_b16_p175",
+        "bert_b16_p200",
+        "bert_b16_p225",
+        "bert_b8_p150",
+        "bert_b8_p175",
+        "bert_b8_p200",
+        "bert_b8_p225"
+      ],
+      "recommended_but_pareto_dominated": [
+        "bert_b8_p150",
+        "bert_b8_p175",
+        "bert_b8_p200",
+        "bert_b8_p225",
+        "bert_b16_p150"
+      ],
+      "changed_labels": 0,
+      "evaluable_labels": 49
+    },
+    "carbon_Kenya": {
+      "eligible": 49,
+      "recommended": [
+        "bert_b12_p200",
+        "bert_b16_p200",
+        "bert_b8_p200"
+      ],
+      "recommended_but_pareto_dominated": [
+        "bert_b8_p200"
+      ],
+      "changed_labels": 31,
+      "evaluable_labels": 49
+    },
+    "carbon_South Africa": {
+      "eligible": 49,
+      "recommended": [
+        "bert_b12_p200",
+        "bert_b16_p200",
+        "bert_b8_p200"
+      ],
+      "recommended_but_pareto_dominated": [
+        "bert_b8_p200"
+      ],
+      "changed_labels": 18,
+      "evaluable_labels": 49
+    },
+    "combined_discussion_only": {
+      "eligible": 15,
+      "recommended": [
+        "bert_b12_p175",
+        "bert_b12_p200",
+        "bert_b16_p200",
+        "bert_b8_p175"
+      ],
+      "recommended_but_pareto_dominated": [
+        "bert_b8_p175",
+        "bert_b12_p200"
+      ],
+      "changed_labels": 40,
+      "evaluable_labels": 49
+    },
+    "outage_checkpoint": {
+      "eligible": 49,
+      "recommended": [
+        "bert_b12_p200",
+        "bert_b16_p200"
+      ],
+      "recommended_but_pareto_dominated": [
+        "bert_b12_p200"
+      ],
+      "changed_labels": 37,
+      "evaluable_labels": 49
+    },
+    "outage_no_recovery": {
+      "eligible": 0,
+      "recommended": [],
+      "recommended_but_pareto_dominated": [],
+      "changed_labels": 0,
+      "evaluable_labels": 0
+    },
+    "reference": {
+      "eligible": 49,
+      "recommended": [
+        "bert_b12_p150",
+        "bert_b12_p175",
+        "bert_b12_p200",
+        "bert_b12_p225",
+        "bert_b16_p150",
+        "bert_b16_p175",
+        "bert_b16_p200",
+        "bert_b16_p225",
+        "bert_b8_p150",
+        "bert_b8_p175",
+        "bert_b8_p200",
+        "bert_b8_p225"
+      ],
+      "recommended_but_pareto_dominated": [
+        "bert_b8_p150",
+        "bert_b8_p175",
+        "bert_b8_p200",
+        "bert_b8_p225",
+        "bert_b16_p150"
+      ],
+      "changed_labels": 0,
+      "evaluable_labels": 49
+    }
+  },
+  "missing": {
+    "time_s": {
+      "n": 49,
+      "changed_labels": 32,
+      "changed_recommendations": 12,
+      "available_changed_recommendations": 20,
+      "mean_absolute_error": 2081.2272500000004
+    },
+    "energy_gpu_kwh": {
+      "n": 49,
+      "changed_labels": 31,
+      "changed_recommendations": 10,
+      "available_changed_recommendations": 20,
+      "mean_absolute_error": 0.035218150604565374
+    }
+  },
+  "source_hashes": {
+    "data\\zeus_a2_v0_1\\protocol.json": "28d2f87d7b43f283bf6e6050cc6dab8d6360564273dab683c454cf07998b1761",
+    "data\\zeus_a2_v0_1\\configurations.csv": "5ec4ee83d94a759dfe4a4659204ade68542331a277a310225559afd88c30bcd2",
+    "data\\zeus_a2_v0_1\\training_paths.csv": "b7887c57373845ddcc0bf7394062a34489ffc09bea82940169bdb5cf54e31ba9",
+    "scripts\\analyse_zeus_profiles.py": "0080d3e6129a056922d573df6b1969b0690fe1d8d082ce741c3e676f4495b114",
+    "scripts\\prepare_zeus_corpus.py": "5c0e2ba5df7702c1d2fbda340a0f3cb5930aabe8f042d01094971adab25d47a1"
+  }
+}

@@ -2,7 +2,7 @@
 
 ## Original analysis code
 
-The independent preparation, profile analysis, tests, plotting and verification scripts accompany the authors' working manuscript. No additional software license has yet been selected for that original code. Publishing these resources does not change the source-specific licenses below.
+The original preparation, profile analysis, tests, plotting and verification code in `scripts/`, the original optional reader `supporting_audit/audit_squad_it_training_logs.py`, and their associated original documentation are licensed under the [MIT License](LICENSE). This grant also covers the same original code and documentation distributed in resource release v0.1.0. The license does not relicense archived third-party code, notebooks, documentation or datasets, and does not assign a new license to research datasets or results. The source-specific terms below remain unchanged.
 
 ## Zeus
 

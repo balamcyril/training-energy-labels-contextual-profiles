@@ -1,6 +1,6 @@
 # Training energy labels under electricity constraints
 
-Reproducibility resources for the working article **Reliability of AI Energy Labels under Electricity Constraints: The Training Case**. Numerical protocol **0.1**, resource release **v0.1.0**, 19 November 2026.
+Reproducibility resources for the working article **Reliability of AI Energy Labels under Electricity Constraints: The Training Case**. Numerical protocol **0.1**, resource release **v0.1.1**, 19 November 2026. This patch release adds the MIT license and updates licensing and citation metadata; the calculation scripts, numerical protocol, inputs and results are unchanged from v0.1.0.
 
 This repository reconstructs 49 BERT/SQuAD configurations from published Zeus traces and evaluates four separate contextual profiles. It contains the archived inputs, numerical configuration, preparation and analysis scripts, tests, computed results, and plotting code. No GPU, model weights, training execution, credentials or external service is needed to reproduce the main results.
 
@@ -98,4 +98,4 @@ These are secondary-analysis and deterministic simulation results, not new train
 - Historical classification: [Castaño et al., replication package v3](https://doi.org/10.5281/zenodo.8115187). Only the unchanged required table, notebook and README are mirrored. The complete 76.4 MB archive was checksum-verified before extraction.
 - The PV/diesel coefficients are documented in the protocol with [their source DOI](https://doi.org/10.1016/j.seta.2021.101471). No publisher PDF is redistributed for that study.
 
-See `THIRD_PARTY_NOTICES.md` for the applicable source terms. No additional license has yet been assigned to the original analysis scripts. Cite this repository's release and commit together with the upstream publications; see `CITATION.cff`. This working resource release is not an assertion that the associated manuscript has been accepted or published.
+The original analysis scripts and their associated original documentation are available under the [MIT License](LICENSE). Retain the copyright and permission notices when redistributing them. See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for the precise scope and the unchanged third-party source terms. Cite this repository's release and commit together with the upstream publications; see `CITATION.cff`. This working resource release is not an assertion that the associated manuscript has been accepted or published.

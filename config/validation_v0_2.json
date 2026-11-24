@@ -1,0 +1,30 @@
+{
+  "version": "0.2",
+  "date": "2026-11-24",
+  "reference_protocol": "config/protocol.json",
+  "decisions": {
+    "D1": "Comparative evaluation of contextual label reliability, with a compact critique of label limits.",
+    "D2": "M1 original best-class set; M2 contextual feasibility then original label; M3 same feasibility then contextual label. Retain all ties.",
+    "D3": "Separate practical shortlist: every available trajectory completes within the horizon and satisfies any budget; remove Pareto-dominated candidates within that strict feasible set before selecting its best contextual class.",
+    "D4": "Documented motivation, explicitly assumed outage schedule; add start halfway through the first supply window.",
+    "D5": "Mean remains the main imputation; compare median and omission using identical masks and frozen calibration.",
+    "D6": "BERT/SQuAD primary; complete compact control on ShuffleNet-v2/CIFAR-100 from the same Zeus/V100 archive.",
+    "D7": "Complete the scientific revision before choosing the target journal."
+  },
+  "secondary_task": {
+    "dataset": "cifar100",
+    "network": "shufflenetv2",
+    "optimizer": "adadelta",
+    "target_metric": 0.6,
+    "quality_unit": "validation accuracy, fraction",
+    "configuration_prefix": "shuffle",
+    "quality_eligibility": "All available matched learning trajectories must reach the published target. Retain failed trajectories and withhold completed-task means and labels for their configurations.",
+    "calibration": "Frozen quantiles of the configuration means satisfying the quality condition, separately from BERT/SQuAD.",
+    "budget": "Same multipliers of the task-specific median reference mean GPU energy.",
+    "recovery": "Same declared surrogate overheads as BERT; sensitivity assumptions, not measured ShuffleNet checkpoint costs."
+  },
+  "shifted_start": {"name": "half_window_start", "first_on_s": 3600},
+  "missing_estimators": ["mean", "median", "omit"],
+  "strict_shortlist": "Use observed/reconstructed complete information only; no imputed value certifies admissibility. Empty shortlists are valid outcomes.",
+  "independence": "Learning trajectories are reused across power limits; neither reconstructed rows nor unequal repeat counts support a common probabilistic guarantee."
+}

@@ -1,0 +1,48 @@
+{
+  "task": {
+    "dataset": "cifar100",
+    "network": "shufflenetv2",
+    "optimizer": "adadelta",
+    "target_metric": 0.6,
+    "quality_unit": "validation accuracy, fraction",
+    "configuration_prefix": "shuffle",
+    "quality_eligibility": "All available matched learning trajectories must reach the published target. Retain failed trajectories and withhold completed-task means and labels for their configurations.",
+    "calibration": "Frozen quantiles of the configuration means satisfying the quality condition, separately from BERT/SQuAD.",
+    "budget": "Same multipliers of the task-specific median reference mean GPU energy.",
+    "recovery": "Same declared surrogate overheads as BERT; sensitivity assumptions, not measured ShuffleNet checkpoint costs."
+  },
+  "candidate_configurations": 70,
+  "quality_eligible_configurations": 63,
+  "unique_learning_trajectories": 54,
+  "reconstructed_rows": 378,
+  "successful_learning_trajectories": 53,
+  "repeats_per_batch": {
+    "8": 4,
+    "16": 5,
+    "32": 5,
+    "64": 5,
+    "128": 5,
+    "256": 5,
+    "512": 5,
+    "1024": 10,
+    "2048": 5,
+    "4096": 5
+  },
+  "failed_trajectories": [
+    {
+      "dataset": "cifar100",
+      "network": "shufflenetv2",
+      "batch_size": "4096",
+      "optimizer": "adadelta",
+      "learning_rate": "1e-1",
+      "run": "4",
+      "target_metric": "0.6",
+      "target_epoch": "nan"
+    }
+  ],
+  "unmatched_training_batches": [],
+  "source_sha256": {
+    "summary_train.csv": "076b35615349ee624403006e5ad67fd9ebda92af690c7750f8bb0c2ab92c0cf4",
+    "summary_power_v100.csv": "f0b066dd1a451bd78f730e001ac3a7c411979bc7f0846f12c1a9fb604aa90628"
+  }
+}

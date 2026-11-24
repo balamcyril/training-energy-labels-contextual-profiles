@@ -1,0 +1,8 @@
+excluded_batch,donors,changed_labels,recommended,recommendations_changed
+8,42,6,bert_b16_p175,1
+12,42,8,bert_b12_p200;bert_b16_p175,1
+16,42,6,bert_b12_p175;bert_b16_p175,1
+24,42,4,bert_b12_p150;bert_b12_p175;bert_b12_p200;bert_b12_p225;bert_b16_p150;bert_b16_p175;bert_b16_p200;bert_b16_p225;bert_b8_p150;bert_b8_p175;bert_b8_p200;bert_b8_p225,0
+32,42,2,bert_b12_p150;bert_b12_p175;bert_b12_p200;bert_b12_p225;bert_b16_p150;bert_b16_p175;bert_b16_p200;bert_b16_p225;bert_b8_p150;bert_b8_p175;bert_b8_p200;bert_b8_p225,0
+48,42,5,bert_b12_p150;bert_b12_p175;bert_b12_p200;bert_b12_p225;bert_b16_p150;bert_b16_p175;bert_b16_p200;bert_b16_p225;bert_b8_p150;bert_b8_p175;bert_b8_p200;bert_b8_p225,0
+56,42,5,bert_b12_p150;bert_b12_p175;bert_b12_p200;bert_b12_p225;bert_b16_p150;bert_b16_p175;bert_b16_p200;bert_b16_p225;bert_b8_p150;bert_b8_p175;bert_b8_p200;bert_b8_p225,0

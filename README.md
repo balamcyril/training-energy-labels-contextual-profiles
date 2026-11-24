@@ -1,8 +1,8 @@
 # Training energy labels under electricity constraints
 
-Reproducibility resources for the working article **Reliability of AI Energy Labels under Electricity Constraints: The Training Case**. Numerical protocol **0.1**, resource release **v0.1.1**, 19 November 2026. This patch release adds the MIT license and updates licensing and citation metadata; the calculation scripts, numerical protocol, inputs and results are unchanged from v0.1.0.
+Reproducibility resources for the working article **Reliability of AI Energy Labels under Electricity Constraints: The Training Case**. Numerical protocol **0.2**, resource release **v0.2.0**, 24 November 2026. This release retains the original protocol-0.1 BERT results and adds explicit selection comparators, stricter sample-level admissibility, a shifted-start sensitivity, median imputation, and a complete compact ShuffleNet-v2/CIFAR-100 control. It is a versioned secondary analysis, not new training or field validation.
 
-This repository reconstructs 49 BERT/SQuAD configurations from published Zeus traces and evaluates four separate contextual profiles. It contains the archived inputs, numerical configuration, preparation and analysis scripts, tests, computed results, and plotting code. No GPU, model weights, training execution, credentials or external service is needed to reproduce the main results.
+This repository reconstructs 49 BERT/SQuAD configurations from published Zeus traces and evaluates four separate contextual profiles. The second-task archive retains 70 CIFAR-100 candidates, of which 63 meet the declared quality eligibility rule. It contains the archived inputs, numerical configuration, preparation and analysis scripts, tests, computed results, and plotting code. No GPU, model weights, training execution, credentials or external service is needed to reproduce the results.
 
 ## Reproduce the results
 
@@ -18,7 +18,7 @@ python -m pip install -r requirements.txt
 python scripts/reproduce.py --check
 ```
 
-`--check` works in a temporary copy and leaves the checkout unchanged. It verifies source checksums, reconstructs the corpus, runs the numerical analysis and eight tests, checks the separate historical class counts, regenerates the five figures and four numerical tables, and compares the numerical outputs with the article's frozen files. It also checks that the archived national factors are exact rows of the archived Ember data. Figure metadata such as PDF creation times can differ; numerical values, labels and table contents are checked independently of that metadata.
+`--check` works in a temporary copy and leaves the checkout unchanged. It verifies source checksums, reconstructs both corpora, runs both analyses and 17 unit tests, checks the separate historical class counts, regenerates six figures and six numerical tabulars, and compares the numerical outputs with the frozen files for both versions. It also checks that the archived national factors are exact rows of the archived Ember data. Figure metadata such as PDF creation times can differ; numerical values, labels and table contents are checked independently of that metadata. The original BERT summaries must agree exactly with protocol 0.1.
 
 For numerical reproduction without third-party Python packages:
 
@@ -37,15 +37,18 @@ After dependency installation, these commands work offline. No archived third-pa
 ## Organization
 
 ```text
-config/protocol.json             Authoritative numerical parameters
+config/protocol.json             Preserved protocol-0.1 reference parameters
+config/validation_v0_2.json       Accepted revision choices and second-task specification
 data/sources/zeus/               Pinned traces, upstream documentation and license
 data/sources/carbon/             Frozen Ember archive, factors and provenance
 data/sources/gaissa_2023/         Extracts for the separate historical check
 data/configurations.csv         49 reconstructed configuration means
 data/training_paths.csv         490 reconstructed configuration/trajectory rows
 data/manifest.json              Corpus scope, source revision and checksums
+data/cifar100/                  All second-task candidates, trajectories and provenance
 results/                        All profiles, sensitivities and summaries
-figures/                        Five figures in PDF, SVG and PNG; plotted values
+results/validation_v0_2/         Separate task outputs, comparisons and strict shortlists
+figures/                        Six figures in PDF, SVG and PNG; plotted values
 tables.tex                      Four generated tabular commands (requires booktabs)
 scripts/                        Preparation, analysis, plotting and verification
 provenance/                     Original metadata and frozen numerical checksums
@@ -59,7 +62,7 @@ This folder is also the standalone `contextual_profiles/` directory in the manus
 
 ## Profiles and parameters
 
-All physical comparisons use the same BERT-base-uncased/SQuAD/V100 corpus and a reached F1 target of 84. Baseline labels use frozen 20/40/60/80% quantile boundaries, half-up rounding and time:energy:carbon weights of 2:1:1. The baseline assumes no additional interruption, budget or information mask; this is an analytical reference, not a field observation of electricity reliability.
+The primary physical comparisons use the same BERT-base-uncased/SQuAD/V100 corpus and a reached F1 target of 84. Baseline labels use frozen 20/40/60/80% quantile boundaries, half-up rounding and time:energy:carbon weights of 2:1:1. The baseline assumes no additional interruption, budget or information mask; this is an analytical reference, not a field observation of electricity reliability.
 
 | Profile | Inputs and interpretation | Main output |
 |---|---|---|
@@ -71,6 +74,23 @@ All physical comparisons use the same BERT-base-uncased/SQuAD/V100 corpus and a 
 `config/protocol.json` also specifies all five weight ratios, interruption sensitivities, budget multipliers and the separate combined example. The missing-information procedure is implemented in `scripts/analyse_zeus_profiles.py`; its 48 donors follow from the fixed 49-configuration corpus. The reached quality target and pinned Zeus revision are retained in `scripts/prepare_zeus_corpus.py` and `data/manifest.json`.
 
 Change parameters only in a new, explicitly versioned study. The default verifier intentionally fails if changed outputs no longer match this article's frozen results. It does not optimize weights, thresholds or simulation assumptions to reproduce a desired ranking.
+
+## Protocol 0.2 validation extension
+
+Run `python scripts/validate_revision.py` and `python scripts/render_revision.py` to regenerate only the extension; the full `reproduce.py --check` command verifies both versions together. The extension does not overwrite `results/reference.csv`, the original scenario files, or the original frozen thresholds. The simulator's optional `first_on_s` argument preserves its original behavior when omitted.
+
+- **M1/M2/M3:** original best-class recommendations; contextual feasibility then original label; identical feasibility then contextual label. `methods.csv` records all identities, infeasible selections and selections dominated by another context-eligible configuration. Ties are retained.
+- **Stricter practical recommendations:** every available trajectory must complete within 24 hours and meet any imposed budget individually. Remove Pareto-dominated configurations within this strict feasible set, then select its best contextual letter. Dominance concerns mean contextual costs, not per-trajectory dominance. `strict.csv` and `weights.csv` keep this separate from the original mean-based comparisons.
+- **Start phase:** the extra case uses one hour until the first cutoff, followed by the unchanged two-hour supply windows and 30-minute outages. All other parameters and the 24-hour horizon remain fixed.
+- **Missing information:** mean, median and omission use the same single-record masks. There are 48 BERT donors or 62 CIFAR donors; a hidden cost and its direct reconstruction routes are unavailable to the estimators. Calibration is retained from the complete reference. Omission has no numerical prediction or absolute error.
+- **CIFAR-100:** match dataset, ShuffleNet-v2, Adadelta, batch size and target accuracy 0.6 in the archived Zeus/V100 inputs. Of 54 distinct learning trajectories, batch 4096/run 4 has no recorded target epoch. All 70 candidates and 378 reconstructed records remain in `data/cifar100/`; the seven configurations sharing that failed target outcome have no completed-task mean or label. The comparison calibrates on 63 configurations and 343 reused trajectory records. Repeats per batch vary from four to ten. Neither their reuse nor unequal sample sizes support a probabilistic reliability guarantee.
+- **Task-specific reference:** CIFAR thresholds and budgets use its own quality-eligible configuration means. All candidates have equal calibration weight; available trajectories have equal weight within a configuration mean. The task's median mean GPU energy is 0.0155084104 kWh. Letters cannot be ranked across the two tasks. The same recovery costs remain simulation assumptions, not measured ShuffleNet costs.
+
+`results/validation_v0_2/bert_squad/` and `shufflenet_cifar100/` each contain `profiles.csv`, `methods.csv`, `strict.csv`, `weights.csv`, `missing.csv`, `outage_paths.csv`, `calibration.csv` and `summary.json`. The enclosing folder contains the source manifest, two generated tabulars, and the new figure's plotted values. `provenance/reference_validation_v0_2_sha256.json` freezes the reviewed extension separately from the original results.
+
+Key checks include BERT median-budget eligibility 25 on means versus 4 on all trajectories; 43 changed BERT labels with a shifted first window and checkpoints; CIFAR budget counts 10/32/35 on means versus 2/14/33 on all trajectories; and central no-recovery/checkpoint completion of 56/63 CIFAR configurations. The CIFAR best-class set survives central interruptions, while omission changes 3/63 recommendation sets per hidden field versus 10/63 for either imputer. These are conditional outcomes, including counterexamples to universal relabeling or imputation benefits.
+
+The cross-context strict-shortlist intersection is empty for BERT. For CIFAR it contains batch 128 at 100 or 125 W, Adadelta learning rate 0.1, across the listed separately evaluated physical scenarios and five weight choices. These short trajectories finish before all tested cutoffs. This finding excludes arbitrary start times, unseen runs, missing costs, recalibration and simultaneous constraints; it is not a universal recommendation.
 
 ## Files, units and expected checks
 

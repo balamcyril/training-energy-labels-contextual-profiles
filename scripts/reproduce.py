@@ -1,4 +1,4 @@
-"""Reproduce protocol v0.1 and check it against the article's frozen numerical files.
+"""Reproduce protocol 0.1 and its versioned 0.2 validation extension.
 
 --check runs in a temporary copy and leaves this checkout unchanged.
 --no-figures needs only the Python standard library; the complete run needs requirements.txt.
@@ -61,6 +61,18 @@ def reproduce(root, figures=True):
     print(f"Verified {len(expected)} frozen numerical/configuration files and all scientific summary values.")
     if figures:
         print("Verified four numerical tables and five figures from unchanged result data.")
+    run(root, ["scripts/validate_revision.py"])
+    tests = run(root, ["-m", "unittest", "discover", "-s", "scripts", "-p", "test_revision.py"])
+    print(tests.stderr.strip())
+    if figures:
+        run(root, ["scripts/render_revision.py"])
+    extension = json.loads((root / "provenance/reference_validation_v0_2_sha256.json").read_text())
+    for name, expected_hash in extension.items():
+        if hashlib.sha256((root / name).read_bytes()).hexdigest() != expected_hash:
+            raise ValueError(f"Protocol-0.2 validation regression: {name}")
+    print(f"Verified {len(extension)} version-0.2 files, both tasks and all decision comparators.")
+    if figures:
+        print("Verified two new comparison tables and the CIFAR-100 control figure data.")
     print("No training, GPU execution or network access was required.")
 
 

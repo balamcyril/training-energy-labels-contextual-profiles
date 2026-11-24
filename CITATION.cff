@@ -2,9 +2,9 @@ cff-version: 1.2.0
 message: "Cite this versioned resource package together with the original Zeus, Ember and historical corpus sources listed in README.md."
 title: "Training Energy Labels under Electricity Constraints: Reproducibility Resources"
 type: software
-version: 0.1.1
+version: 0.2.0
 license: MIT
-date-released: 2026-11-19
+date-released: 2026-11-24
 repository-code: "https://github.com/balamcyril/training-energy-labels-contextual-profiles"
 url: "https://github.com/balamcyril/training-energy-labels-contextual-profiles"
 authors:
@@ -20,4 +20,4 @@ authors:
     given-names: "Arouna Ndam"
   - family-names: "Labraoui"
     given-names: "Nabila"
-abstract: "Archived inputs, configuration, independent analysis scripts, tests, tables and figures for a secondary analysis of BERT training energy labels under four separate contextual profiles. No new training or field validation is claimed."
+abstract: "Archived inputs, configurations, analysis scripts, tests, tables and figures for BERT/SQuAD training energy labels and a ShuffleNet-v2/CIFAR-100 control under four contextual profiles. Protocol 0.2 preserves the original results and adds explicit selection comparators, stricter sample-level admissibility, shifted-start sensitivity and median imputation. No new training or field validation is claimed."

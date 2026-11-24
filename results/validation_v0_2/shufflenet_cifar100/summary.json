@@ -1,0 +1,1898 @@
+{
+  "task": "shufflenet_cifar100",
+  "candidate_configurations": 70,
+  "calibrated_configurations": 63,
+  "thresholds": {
+    "time_s": [
+      353.22066666666666,
+      600.54,
+      1065.7974666666667,
+      2352.2639999999997
+    ],
+    "energy_gpu_kwh": [
+      0.01294366974448706,
+      0.01518005116688569,
+      0.024407600265985627,
+      0.056408169168743
+    ],
+    "carbon_g": [
+      2.845782286353181,
+      3.337470869500321,
+      5.366230586879334,
+      12.401843665270668
+    ]
+  },
+  "energy_reference_kwh": 0.015508410428289038,
+  "profiles": {
+    "reference": {
+      "eligible": 63,
+      "strict_eligible": 63,
+      "completed_paths": 343,
+      "total_paths": 343,
+      "changed_labels": 0,
+      "labels": {
+        "A": 10,
+        "B": 10,
+        "C": 17,
+        "D": 7,
+        "E": 19
+      },
+      "methods": {
+        "M1": [
+          "shuffle_b128_p100",
+          "shuffle_b128_p125",
+          "shuffle_b128_p150",
+          "shuffle_b128_p175",
+          "shuffle_b128_p200",
+          "shuffle_b128_p225",
+          "shuffle_b128_p250",
+          "shuffle_b256_p125",
+          "shuffle_b256_p150",
+          "shuffle_b256_p175"
+        ],
+        "M2": [
+          "shuffle_b128_p100",
+          "shuffle_b128_p125",
+          "shuffle_b128_p150",
+          "shuffle_b128_p175",
+          "shuffle_b128_p200",
+          "shuffle_b128_p225",
+          "shuffle_b128_p250",
+          "shuffle_b256_p125",
+          "shuffle_b256_p150",
+          "shuffle_b256_p175"
+        ],
+        "M3": [
+          "shuffle_b128_p100",
+          "shuffle_b128_p125",
+          "shuffle_b128_p150",
+          "shuffle_b128_p175",
+          "shuffle_b128_p200",
+          "shuffle_b128_p225",
+          "shuffle_b128_p250",
+          "shuffle_b256_p125",
+          "shuffle_b256_p150",
+          "shuffle_b256_p175"
+        ]
+      },
+      "strict_recommended": [
+        "shuffle_b128_p100",
+        "shuffle_b128_p125",
+        "shuffle_b128_p150",
+        "shuffle_b256_p175"
+      ],
+      "strict_recommended_all_weights": [
+        "shuffle_b128_p100",
+        "shuffle_b128_p125",
+        "shuffle_b128_p150",
+        "shuffle_b256_p175"
+      ],
+      "mean_time_s": 1938.6568571428572
+    },
+    "budget_0.75": {
+      "eligible": 10,
+      "strict_eligible": 2,
+      "completed_paths": 343,
+      "total_paths": 343,
+      "changed_labels": 0,
+      "labels": {
+        "A": 10,
+        "B": 10,
+        "C": 17,
+        "D": 7,
+        "E": 19
+      },
+      "methods": {
+        "M1": [
+          "shuffle_b128_p100",
+          "shuffle_b128_p125",
+          "shuffle_b128_p150",
+          "shuffle_b128_p175",
+          "shuffle_b128_p200",
+          "shuffle_b128_p225",
+          "shuffle_b128_p250",
+          "shuffle_b256_p125",
+          "shuffle_b256_p150",
+          "shuffle_b256_p175"
+        ],
+        "M2": [
+          "shuffle_b128_p100",
+          "shuffle_b128_p125",
+          "shuffle_b128_p150",
+          "shuffle_b128_p175",
+          "shuffle_b128_p200",
+          "shuffle_b128_p225",
+          "shuffle_b128_p250",
+          "shuffle_b256_p125",
+          "shuffle_b256_p150"
+        ],
+        "M3": [
+          "shuffle_b128_p100",
+          "shuffle_b128_p125",
+          "shuffle_b128_p150",
+          "shuffle_b128_p175",
+          "shuffle_b128_p200",
+          "shuffle_b128_p225",
+          "shuffle_b128_p250",
+          "shuffle_b256_p125",
+          "shuffle_b256_p150"
+        ]
+      },
+      "strict_recommended": [
+        "shuffle_b128_p100",
+        "shuffle_b128_p125"
+      ],
+      "strict_recommended_all_weights": [
+        "shuffle_b128_p100",
+        "shuffle_b128_p125"
+      ],
+      "mean_time_s": 1938.6568571428572
+    },
+    "budget_1": {
+      "eligible": 32,
+      "strict_eligible": 14,
+      "completed_paths": 343,
+      "total_paths": 343,
+      "changed_labels": 0,
+      "labels": {
+        "A": 10,
+        "B": 10,
+        "C": 17,
+        "D": 7,
+        "E": 19
+      },
+      "methods": {
+        "M1": [
+          "shuffle_b128_p100",
+          "shuffle_b128_p125",
+          "shuffle_b128_p150",
+          "shuffle_b128_p175",
+          "shuffle_b128_p200",
+          "shuffle_b128_p225",
+          "shuffle_b128_p250",
+          "shuffle_b256_p125",
+          "shuffle_b256_p150",
+          "shuffle_b256_p175"
+        ],
+        "M2": [
+          "shuffle_b128_p100",
+          "shuffle_b128_p125",
+          "shuffle_b128_p150",
+          "shuffle_b128_p175",
+          "shuffle_b128_p200",
+          "shuffle_b128_p225",
+          "shuffle_b128_p250",
+          "shuffle_b256_p125",
+          "shuffle_b256_p150",
+          "shuffle_b256_p175"
+        ],
+        "M3": [
+          "shuffle_b128_p100",
+          "shuffle_b128_p125",
+          "shuffle_b128_p150",
+          "shuffle_b128_p175",
+          "shuffle_b128_p200",
+          "shuffle_b128_p225",
+          "shuffle_b128_p250",
+          "shuffle_b256_p125",
+          "shuffle_b256_p150",
+          "shuffle_b256_p175"
+        ]
+      },
+      "strict_recommended": [
+        "shuffle_b128_p100",
+        "shuffle_b128_p125",
+        "shuffle_b128_p150"
+      ],
+      "strict_recommended_all_weights": [
+        "shuffle_b128_p100",
+        "shuffle_b128_p125",
+        "shuffle_b128_p150"
+      ],
+      "mean_time_s": 1938.6568571428572
+    },
+    "budget_1.25": {
+      "eligible": 35,
+      "strict_eligible": 33,
+      "completed_paths": 343,
+      "total_paths": 343,
+      "changed_labels": 0,
+      "labels": {
+        "A": 10,
+        "B": 10,
+        "C": 17,
+        "D": 7,
+        "E": 19
+      },
+      "methods": {
+        "M1": [
+          "shuffle_b128_p100",
+          "shuffle_b128_p125",
+          "shuffle_b128_p150",
+          "shuffle_b128_p175",
+          "shuffle_b128_p200",
+          "shuffle_b128_p225",
+          "shuffle_b128_p250",
+          "shuffle_b256_p125",
+          "shuffle_b256_p150",
+          "shuffle_b256_p175"
+        ],
+        "M2": [
+          "shuffle_b128_p100",
+          "shuffle_b128_p125",
+          "shuffle_b128_p150",
+          "shuffle_b128_p175",
+          "shuffle_b128_p200",
+          "shuffle_b128_p225",
+          "shuffle_b128_p250",
+          "shuffle_b256_p125",
+          "shuffle_b256_p150",
+          "shuffle_b256_p175"
+        ],
+        "M3": [
+          "shuffle_b128_p100",
+          "shuffle_b128_p125",
+          "shuffle_b128_p150",
+          "shuffle_b128_p175",
+          "shuffle_b128_p200",
+          "shuffle_b128_p225",
+          "shuffle_b128_p250",
+          "shuffle_b256_p125",
+          "shuffle_b256_p150",
+          "shuffle_b256_p175"
+        ]
+      },
+      "strict_recommended": [
+        "shuffle_b128_p100",
+        "shuffle_b128_p125",
+        "shuffle_b128_p150",
+        "shuffle_b256_p175"
+      ],
+      "strict_recommended_all_weights": [
+        "shuffle_b128_p100",
+        "shuffle_b128_p125",
+        "shuffle_b128_p150",
+        "shuffle_b256_p175"
+      ],
+      "mean_time_s": 1938.6568571428572
+    },
+    "carbon_Kenya": {
+      "eligible": 63,
+      "strict_eligible": 63,
+      "completed_paths": 343,
+      "total_paths": 343,
+      "changed_labels": 29,
+      "labels": {
+        "A": 12,
+        "B": 17,
+        "C": 14,
+        "D": 13,
+        "E": 7
+      },
+      "methods": {
+        "M1": [
+          "shuffle_b128_p100",
+          "shuffle_b128_p125",
+          "shuffle_b128_p150",
+          "shuffle_b128_p175",
+          "shuffle_b128_p200",
+          "shuffle_b128_p225",
+          "shuffle_b128_p250",
+          "shuffle_b256_p125",
+          "shuffle_b256_p150",
+          "shuffle_b256_p175"
+        ],
+        "M2": [
+          "shuffle_b128_p100",
+          "shuffle_b128_p125",
+          "shuffle_b128_p150",
+          "shuffle_b128_p175",
+          "shuffle_b128_p200",
+          "shuffle_b128_p225",
+          "shuffle_b128_p250",
+          "shuffle_b256_p125",
+          "shuffle_b256_p150",
+          "shuffle_b256_p175"
+        ],
+        "M3": [
+          "shuffle_b128_p100",
+          "shuffle_b128_p125",
+          "shuffle_b128_p150",
+          "shuffle_b128_p175",
+          "shuffle_b128_p200",
+          "shuffle_b128_p225",
+          "shuffle_b128_p250",
+          "shuffle_b256_p125",
+          "shuffle_b256_p150",
+          "shuffle_b256_p175",
+          "shuffle_b256_p200",
+          "shuffle_b256_p225"
+        ]
+      },
+      "strict_recommended": [
+        "shuffle_b128_p100",
+        "shuffle_b128_p125",
+        "shuffle_b128_p150",
+        "shuffle_b256_p175",
+        "shuffle_b256_p200",
+        "shuffle_b256_p225"
+      ],
+      "strict_recommended_all_weights": [
+        "shuffle_b128_p100",
+        "shuffle_b128_p125",
+        "shuffle_b128_p150",
+        "shuffle_b256_p175",
+        "shuffle_b256_p200",
+        "shuffle_b256_p225"
+      ],
+      "mean_time_s": 1938.6568571428572
+    },
+    "carbon_Cameroon": {
+      "eligible": 63,
+      "strict_eligible": 63,
+      "completed_paths": 343,
+      "total_paths": 343,
+      "changed_labels": 0,
+      "labels": {
+        "A": 10,
+        "B": 10,
+        "C": 17,
+        "D": 7,
+        "E": 19
+      },
+      "methods": {
+        "M1": [
+          "shuffle_b128_p100",
+          "shuffle_b128_p125",
+          "shuffle_b128_p150",
+          "shuffle_b128_p175",
+          "shuffle_b128_p200",
+          "shuffle_b128_p225",
+          "shuffle_b128_p250",
+          "shuffle_b256_p125",
+          "shuffle_b256_p150",
+          "shuffle_b256_p175"
+        ],
+        "M2": [
+          "shuffle_b128_p100",
+          "shuffle_b128_p125",
+          "shuffle_b128_p150",
+          "shuffle_b128_p175",
+          "shuffle_b128_p200",
+          "shuffle_b128_p225",
+          "shuffle_b128_p250",
+          "shuffle_b256_p125",
+          "shuffle_b256_p150",
+          "shuffle_b256_p175"
+        ],
+        "M3": [
+          "shuffle_b128_p100",
+          "shuffle_b128_p125",
+          "shuffle_b128_p150",
+          "shuffle_b128_p175",
+          "shuffle_b128_p200",
+          "shuffle_b128_p225",
+          "shuffle_b128_p250",
+          "shuffle_b256_p125",
+          "shuffle_b256_p150",
+          "shuffle_b256_p175"
+        ]
+      },
+      "strict_recommended": [
+        "shuffle_b128_p100",
+        "shuffle_b128_p125",
+        "shuffle_b128_p150",
+        "shuffle_b256_p175"
+      ],
+      "strict_recommended_all_weights": [
+        "shuffle_b128_p100",
+        "shuffle_b128_p125",
+        "shuffle_b128_p150",
+        "shuffle_b256_p175"
+      ],
+      "mean_time_s": 1938.6568571428572
+    },
+    "carbon_South Africa": {
+      "eligible": 63,
+      "strict_eligible": 63,
+      "completed_paths": 343,
+      "total_paths": 343,
+      "changed_labels": 19,
+      "labels": {
+        "A": 0,
+        "B": 16,
+        "C": 16,
+        "D": 12,
+        "E": 19
+      },
+      "methods": {
+        "M1": [
+          "shuffle_b128_p100",
+          "shuffle_b128_p125",
+          "shuffle_b128_p150",
+          "shuffle_b128_p175",
+          "shuffle_b128_p200",
+          "shuffle_b128_p225",
+          "shuffle_b128_p250",
+          "shuffle_b256_p125",
+          "shuffle_b256_p150",
+          "shuffle_b256_p175"
+        ],
+        "M2": [
+          "shuffle_b128_p100",
+          "shuffle_b128_p125",
+          "shuffle_b128_p150",
+          "shuffle_b128_p175",
+          "shuffle_b128_p200",
+          "shuffle_b128_p225",
+          "shuffle_b128_p250",
+          "shuffle_b256_p125",
+          "shuffle_b256_p150",
+          "shuffle_b256_p175"
+        ],
+        "M3": [
+          "shuffle_b128_p100",
+          "shuffle_b128_p125",
+          "shuffle_b128_p150",
+          "shuffle_b128_p175",
+          "shuffle_b128_p200",
+          "shuffle_b128_p225",
+          "shuffle_b128_p250",
+          "shuffle_b256_p100",
+          "shuffle_b256_p125",
+          "shuffle_b256_p150",
+          "shuffle_b256_p175",
+          "shuffle_b256_p200",
+          "shuffle_b256_p225",
+          "shuffle_b256_p250",
+          "shuffle_b512_p100",
+          "shuffle_b512_p125"
+        ]
+      },
+      "strict_recommended": [
+        "shuffle_b128_p100",
+        "shuffle_b128_p125",
+        "shuffle_b128_p150",
+        "shuffle_b256_p175",
+        "shuffle_b256_p200",
+        "shuffle_b256_p225"
+      ],
+      "strict_recommended_all_weights": [
+        "shuffle_b128_p100",
+        "shuffle_b128_p125",
+        "shuffle_b128_p150",
+        "shuffle_b256_p175",
+        "shuffle_b256_p200",
+        "shuffle_b256_p225"
+      ],
+      "mean_time_s": 1938.6568571428572
+    },
+    "illustrative_supply_PV_low": {
+      "eligible": 63,
+      "strict_eligible": 63,
+      "completed_paths": 343,
+      "total_paths": 343,
+      "changed_labels": 28,
+      "labels": {
+        "A": 12,
+        "B": 16,
+        "C": 15,
+        "D": 13,
+        "E": 7
+      },
+      "methods": {
+        "M1": [
+          "shuffle_b128_p100",
+          "shuffle_b128_p125",
+          "shuffle_b128_p150",
+          "shuffle_b128_p175",
+          "shuffle_b128_p200",
+          "shuffle_b128_p225",
+          "shuffle_b128_p250",
+          "shuffle_b256_p125",
+          "shuffle_b256_p150",
+          "shuffle_b256_p175"
+        ],
+        "M2": [
+          "shuffle_b128_p100",
+          "shuffle_b128_p125",
+          "shuffle_b128_p150",
+          "shuffle_b128_p175",
+          "shuffle_b128_p200",
+          "shuffle_b128_p225",
+          "shuffle_b128_p250",
+          "shuffle_b256_p125",
+          "shuffle_b256_p150",
+          "shuffle_b256_p175"
+        ],
+        "M3": [
+          "shuffle_b128_p100",
+          "shuffle_b128_p125",
+          "shuffle_b128_p150",
+          "shuffle_b128_p175",
+          "shuffle_b128_p200",
+          "shuffle_b128_p225",
+          "shuffle_b128_p250",
+          "shuffle_b256_p125",
+          "shuffle_b256_p150",
+          "shuffle_b256_p175",
+          "shuffle_b256_p200",
+          "shuffle_b256_p225"
+        ]
+      },
+      "strict_recommended": [
+        "shuffle_b128_p100",
+        "shuffle_b128_p125",
+        "shuffle_b128_p150",
+        "shuffle_b256_p175",
+        "shuffle_b256_p200",
+        "shuffle_b256_p225"
+      ],
+      "strict_recommended_all_weights": [
+        "shuffle_b128_p100",
+        "shuffle_b128_p125",
+        "shuffle_b128_p150",
+        "shuffle_b256_p175",
+        "shuffle_b256_p200",
+        "shuffle_b256_p225"
+      ],
+      "mean_time_s": 1938.6568571428572
+    },
+    "illustrative_supply_PV_midpoint_assumption": {
+      "eligible": 63,
+      "strict_eligible": 63,
+      "completed_paths": 343,
+      "total_paths": 343,
+      "changed_labels": 27,
+      "labels": {
+        "A": 12,
+        "B": 16,
+        "C": 14,
+        "D": 14,
+        "E": 7
+      },
+      "methods": {
+        "M1": [
+          "shuffle_b128_p100",
+          "shuffle_b128_p125",
+          "shuffle_b128_p150",
+          "shuffle_b128_p175",
+          "shuffle_b128_p200",
+          "shuffle_b128_p225",
+          "shuffle_b128_p250",
+          "shuffle_b256_p125",
+          "shuffle_b256_p150",
+          "shuffle_b256_p175"
+        ],
+        "M2": [
+          "shuffle_b128_p100",
+          "shuffle_b128_p125",
+          "shuffle_b128_p150",
+          "shuffle_b128_p175",
+          "shuffle_b128_p200",
+          "shuffle_b128_p225",
+          "shuffle_b128_p250",
+          "shuffle_b256_p125",
+          "shuffle_b256_p150",
+          "shuffle_b256_p175"
+        ],
+        "M3": [
+          "shuffle_b128_p100",
+          "shuffle_b128_p125",
+          "shuffle_b128_p150",
+          "shuffle_b128_p175",
+          "shuffle_b128_p200",
+          "shuffle_b128_p225",
+          "shuffle_b128_p250",
+          "shuffle_b256_p125",
+          "shuffle_b256_p150",
+          "shuffle_b256_p175",
+          "shuffle_b256_p200",
+          "shuffle_b256_p225"
+        ]
+      },
+      "strict_recommended": [
+        "shuffle_b128_p100",
+        "shuffle_b128_p125",
+        "shuffle_b128_p150",
+        "shuffle_b256_p175",
+        "shuffle_b256_p200",
+        "shuffle_b256_p225"
+      ],
+      "strict_recommended_all_weights": [
+        "shuffle_b128_p100",
+        "shuffle_b128_p125",
+        "shuffle_b128_p150",
+        "shuffle_b256_p175",
+        "shuffle_b256_p200",
+        "shuffle_b256_p225"
+      ],
+      "mean_time_s": 1938.6568571428572
+    },
+    "illustrative_supply_PV_high": {
+      "eligible": 63,
+      "strict_eligible": 63,
+      "completed_paths": 343,
+      "total_paths": 343,
+      "changed_labels": 26,
+      "labels": {
+        "A": 12,
+        "B": 16,
+        "C": 14,
+        "D": 13,
+        "E": 8
+      },
+      "methods": {
+        "M1": [
+          "shuffle_b128_p100",
+          "shuffle_b128_p125",
+          "shuffle_b128_p150",
+          "shuffle_b128_p175",
+          "shuffle_b128_p200",
+          "shuffle_b128_p225",
+          "shuffle_b128_p250",
+          "shuffle_b256_p125",
+          "shuffle_b256_p150",
+          "shuffle_b256_p175"
+        ],
+        "M2": [
+          "shuffle_b128_p100",
+          "shuffle_b128_p125",
+          "shuffle_b128_p150",
+          "shuffle_b128_p175",
+          "shuffle_b128_p200",
+          "shuffle_b128_p225",
+          "shuffle_b128_p250",
+          "shuffle_b256_p125",
+          "shuffle_b256_p150",
+          "shuffle_b256_p175"
+        ],
+        "M3": [
+          "shuffle_b128_p100",
+          "shuffle_b128_p125",
+          "shuffle_b128_p150",
+          "shuffle_b128_p175",
+          "shuffle_b128_p200",
+          "shuffle_b128_p225",
+          "shuffle_b128_p250",
+          "shuffle_b256_p125",
+          "shuffle_b256_p150",
+          "shuffle_b256_p175",
+          "shuffle_b256_p200",
+          "shuffle_b256_p225"
+        ]
+      },
+      "strict_recommended": [
+        "shuffle_b128_p100",
+        "shuffle_b128_p125",
+        "shuffle_b128_p150",
+        "shuffle_b256_p175",
+        "shuffle_b256_p200",
+        "shuffle_b256_p225"
+      ],
+      "strict_recommended_all_weights": [
+        "shuffle_b128_p100",
+        "shuffle_b128_p125",
+        "shuffle_b128_p150",
+        "shuffle_b256_p175",
+        "shuffle_b256_p200",
+        "shuffle_b256_p225"
+      ],
+      "mean_time_s": 1938.6568571428572
+    },
+    "illustrative_supply_Diesel": {
+      "eligible": 63,
+      "strict_eligible": 63,
+      "completed_paths": 343,
+      "total_paths": 343,
+      "changed_labels": 25,
+      "labels": {
+        "A": 0,
+        "B": 13,
+        "C": 16,
+        "D": 15,
+        "E": 19
+      },
+      "methods": {
+        "M1": [
+          "shuffle_b128_p100",
+          "shuffle_b128_p125",
+          "shuffle_b128_p150",
+          "shuffle_b128_p175",
+          "shuffle_b128_p200",
+          "shuffle_b128_p225",
+          "shuffle_b128_p250",
+          "shuffle_b256_p125",
+          "shuffle_b256_p150",
+          "shuffle_b256_p175"
+        ],
+        "M2": [
+          "shuffle_b128_p100",
+          "shuffle_b128_p125",
+          "shuffle_b128_p150",
+          "shuffle_b128_p175",
+          "shuffle_b128_p200",
+          "shuffle_b128_p225",
+          "shuffle_b128_p250",
+          "shuffle_b256_p125",
+          "shuffle_b256_p150",
+          "shuffle_b256_p175"
+        ],
+        "M3": [
+          "shuffle_b128_p100",
+          "shuffle_b128_p125",
+          "shuffle_b128_p150",
+          "shuffle_b128_p175",
+          "shuffle_b128_p200",
+          "shuffle_b128_p225",
+          "shuffle_b128_p250",
+          "shuffle_b256_p100",
+          "shuffle_b256_p125",
+          "shuffle_b256_p150",
+          "shuffle_b256_p175",
+          "shuffle_b256_p200",
+          "shuffle_b256_p225"
+        ]
+      },
+      "strict_recommended": [
+        "shuffle_b128_p100",
+        "shuffle_b128_p125",
+        "shuffle_b128_p150",
+        "shuffle_b256_p175",
+        "shuffle_b256_p200",
+        "shuffle_b256_p225"
+      ],
+      "strict_recommended_all_weights": [
+        "shuffle_b128_p100",
+        "shuffle_b128_p125",
+        "shuffle_b128_p150"
+      ],
+      "mean_time_s": 1938.6568571428572
+    },
+    "outage_no_recovery": {
+      "eligible": 56,
+      "strict_eligible": 56,
+      "completed_paths": 315,
+      "total_paths": 343,
+      "changed_labels": 0,
+      "labels": {
+        "A": 10,
+        "B": 10,
+        "C": 17,
+        "D": 7,
+        "E": 12
+      },
+      "methods": {
+        "M1": [
+          "shuffle_b128_p100",
+          "shuffle_b128_p125",
+          "shuffle_b128_p150",
+          "shuffle_b128_p175",
+          "shuffle_b128_p200",
+          "shuffle_b128_p225",
+          "shuffle_b128_p250",
+          "shuffle_b256_p125",
+          "shuffle_b256_p150",
+          "shuffle_b256_p175"
+        ],
+        "M2": [
+          "shuffle_b128_p100",
+          "shuffle_b128_p125",
+          "shuffle_b128_p150",
+          "shuffle_b128_p175",
+          "shuffle_b128_p200",
+          "shuffle_b128_p225",
+          "shuffle_b128_p250",
+          "shuffle_b256_p125",
+          "shuffle_b256_p150",
+          "shuffle_b256_p175"
+        ],
+        "M3": [
+          "shuffle_b128_p100",
+          "shuffle_b128_p125",
+          "shuffle_b128_p150",
+          "shuffle_b128_p175",
+          "shuffle_b128_p200",
+          "shuffle_b128_p225",
+          "shuffle_b128_p250",
+          "shuffle_b256_p125",
+          "shuffle_b256_p150",
+          "shuffle_b256_p175"
+        ]
+      },
+      "strict_recommended": [
+        "shuffle_b128_p100",
+        "shuffle_b128_p125",
+        "shuffle_b128_p150",
+        "shuffle_b256_p175"
+      ],
+      "strict_recommended_all_weights": [
+        "shuffle_b128_p100",
+        "shuffle_b128_p125",
+        "shuffle_b128_p150",
+        "shuffle_b256_p175"
+      ],
+      "mean_time_s": null
+    },
+    "outage_checkpoint": {
+      "eligible": 63,
+      "strict_eligible": 63,
+      "completed_paths": 343,
+      "total_paths": 343,
+      "changed_labels": 3,
+      "labels": {
+        "A": 10,
+        "B": 10,
+        "C": 15,
+        "D": 8,
+        "E": 20
+      },
+      "methods": {
+        "M1": [
+          "shuffle_b128_p100",
+          "shuffle_b128_p125",
+          "shuffle_b128_p150",
+          "shuffle_b128_p175",
+          "shuffle_b128_p200",
+          "shuffle_b128_p225",
+          "shuffle_b128_p250",
+          "shuffle_b256_p125",
+          "shuffle_b256_p150",
+          "shuffle_b256_p175"
+        ],
+        "M2": [
+          "shuffle_b128_p100",
+          "shuffle_b128_p125",
+          "shuffle_b128_p150",
+          "shuffle_b128_p175",
+          "shuffle_b128_p200",
+          "shuffle_b128_p225",
+          "shuffle_b128_p250",
+          "shuffle_b256_p125",
+          "shuffle_b256_p150",
+          "shuffle_b256_p175"
+        ],
+        "M3": [
+          "shuffle_b128_p100",
+          "shuffle_b128_p125",
+          "shuffle_b128_p150",
+          "shuffle_b128_p175",
+          "shuffle_b128_p200",
+          "shuffle_b128_p225",
+          "shuffle_b128_p250",
+          "shuffle_b256_p125",
+          "shuffle_b256_p150",
+          "shuffle_b256_p175"
+        ]
+      },
+      "strict_recommended": [
+        "shuffle_b128_p100",
+        "shuffle_b128_p125",
+        "shuffle_b128_p150",
+        "shuffle_b256_p175"
+      ],
+      "strict_recommended_all_weights": [
+        "shuffle_b128_p100",
+        "shuffle_b128_p125",
+        "shuffle_b128_p150",
+        "shuffle_b256_p175"
+      ],
+      "mean_time_s": 2246.478285714286
+    },
+    "on_1h_no_recovery": {
+      "eligible": 56,
+      "strict_eligible": 56,
+      "completed_paths": 315,
+      "total_paths": 343,
+      "changed_labels": 0,
+      "labels": {
+        "A": 10,
+        "B": 10,
+        "C": 17,
+        "D": 7,
+        "E": 12
+      },
+      "methods": {
+        "M1": [
+          "shuffle_b128_p100",
+          "shuffle_b128_p125",
+          "shuffle_b128_p150",
+          "shuffle_b128_p175",
+          "shuffle_b128_p200",
+          "shuffle_b128_p225",
+          "shuffle_b128_p250",
+          "shuffle_b256_p125",
+          "shuffle_b256_p150",
+          "shuffle_b256_p175"
+        ],
+        "M2": [
+          "shuffle_b128_p100",
+          "shuffle_b128_p125",
+          "shuffle_b128_p150",
+          "shuffle_b128_p175",
+          "shuffle_b128_p200",
+          "shuffle_b128_p225",
+          "shuffle_b128_p250",
+          "shuffle_b256_p125",
+          "shuffle_b256_p150",
+          "shuffle_b256_p175"
+        ],
+        "M3": [
+          "shuffle_b128_p100",
+          "shuffle_b128_p125",
+          "shuffle_b128_p150",
+          "shuffle_b128_p175",
+          "shuffle_b128_p200",
+          "shuffle_b128_p225",
+          "shuffle_b128_p250",
+          "shuffle_b256_p125",
+          "shuffle_b256_p150",
+          "shuffle_b256_p175"
+        ]
+      },
+      "strict_recommended": [
+        "shuffle_b128_p100",
+        "shuffle_b128_p125",
+        "shuffle_b128_p150",
+        "shuffle_b256_p175"
+      ],
+      "strict_recommended_all_weights": [
+        "shuffle_b128_p100",
+        "shuffle_b128_p125",
+        "shuffle_b128_p150",
+        "shuffle_b256_p175"
+      ],
+      "mean_time_s": null
+    },
+    "on_1h_checkpoint": {
+      "eligible": 63,
+      "strict_eligible": 63,
+      "completed_paths": 343,
+      "total_paths": 343,
+      "changed_labels": 3,
+      "labels": {
+        "A": 10,
+        "B": 10,
+        "C": 15,
+        "D": 8,
+        "E": 20
+      },
+      "methods": {
+        "M1": [
+          "shuffle_b128_p100",
+          "shuffle_b128_p125",
+          "shuffle_b128_p150",
+          "shuffle_b128_p175",
+          "shuffle_b128_p200",
+          "shuffle_b128_p225",
+          "shuffle_b128_p250",
+          "shuffle_b256_p125",
+          "shuffle_b256_p150",
+          "shuffle_b256_p175"
+        ],
+        "M2": [
+          "shuffle_b128_p100",
+          "shuffle_b128_p125",
+          "shuffle_b128_p150",
+          "shuffle_b128_p175",
+          "shuffle_b128_p200",
+          "shuffle_b128_p225",
+          "shuffle_b128_p250",
+          "shuffle_b256_p125",
+          "shuffle_b256_p150",
+          "shuffle_b256_p175"
+        ],
+        "M3": [
+          "shuffle_b128_p100",
+          "shuffle_b128_p125",
+          "shuffle_b128_p150",
+          "shuffle_b128_p175",
+          "shuffle_b128_p200",
+          "shuffle_b128_p225",
+          "shuffle_b128_p250",
+          "shuffle_b256_p125",
+          "shuffle_b256_p150",
+          "shuffle_b256_p175"
+        ]
+      },
+      "strict_recommended": [
+        "shuffle_b128_p100",
+        "shuffle_b128_p125",
+        "shuffle_b128_p150",
+        "shuffle_b256_p175"
+      ],
+      "strict_recommended_all_weights": [
+        "shuffle_b128_p100",
+        "shuffle_b128_p125",
+        "shuffle_b128_p150",
+        "shuffle_b256_p175"
+      ],
+      "mean_time_s": 2802.748126984127
+    },
+    "on_4h_no_recovery": {
+      "eligible": 63,
+      "strict_eligible": 63,
+      "completed_paths": 343,
+      "total_paths": 343,
+      "changed_labels": 0,
+      "labels": {
+        "A": 10,
+        "B": 10,
+        "C": 17,
+        "D": 7,
+        "E": 19
+      },
+      "methods": {
+        "M1": [
+          "shuffle_b128_p100",
+          "shuffle_b128_p125",
+          "shuffle_b128_p150",
+          "shuffle_b128_p175",
+          "shuffle_b128_p200",
+          "shuffle_b128_p225",
+          "shuffle_b128_p250",
+          "shuffle_b256_p125",
+          "shuffle_b256_p150",
+          "shuffle_b256_p175"
+        ],
+        "M2": [
+          "shuffle_b128_p100",
+          "shuffle_b128_p125",
+          "shuffle_b128_p150",
+          "shuffle_b128_p175",
+          "shuffle_b128_p200",
+          "shuffle_b128_p225",
+          "shuffle_b128_p250",
+          "shuffle_b256_p125",
+          "shuffle_b256_p150",
+          "shuffle_b256_p175"
+        ],
+        "M3": [
+          "shuffle_b128_p100",
+          "shuffle_b128_p125",
+          "shuffle_b128_p150",
+          "shuffle_b128_p175",
+          "shuffle_b128_p200",
+          "shuffle_b128_p225",
+          "shuffle_b128_p250",
+          "shuffle_b256_p125",
+          "shuffle_b256_p150",
+          "shuffle_b256_p175"
+        ]
+      },
+      "strict_recommended": [
+        "shuffle_b128_p100",
+        "shuffle_b128_p125",
+        "shuffle_b128_p150",
+        "shuffle_b256_p175"
+      ],
+      "strict_recommended_all_weights": [
+        "shuffle_b128_p100",
+        "shuffle_b128_p125",
+        "shuffle_b128_p150",
+        "shuffle_b256_p175"
+      ],
+      "mean_time_s": 1938.6568571428572
+    },
+    "on_4h_checkpoint": {
+      "eligible": 63,
+      "strict_eligible": 63,
+      "completed_paths": 343,
+      "total_paths": 343,
+      "changed_labels": 3,
+      "labels": {
+        "A": 10,
+        "B": 10,
+        "C": 15,
+        "D": 8,
+        "E": 20
+      },
+      "methods": {
+        "M1": [
+          "shuffle_b128_p100",
+          "shuffle_b128_p125",
+          "shuffle_b128_p150",
+          "shuffle_b128_p175",
+          "shuffle_b128_p200",
+          "shuffle_b128_p225",
+          "shuffle_b128_p250",
+          "shuffle_b256_p125",
+          "shuffle_b256_p150",
+          "shuffle_b256_p175"
+        ],
+        "M2": [
+          "shuffle_b128_p100",
+          "shuffle_b128_p125",
+          "shuffle_b128_p150",
+          "shuffle_b128_p175",
+          "shuffle_b128_p200",
+          "shuffle_b128_p225",
+          "shuffle_b128_p250",
+          "shuffle_b256_p125",
+          "shuffle_b256_p150",
+          "shuffle_b256_p175"
+        ],
+        "M3": [
+          "shuffle_b128_p100",
+          "shuffle_b128_p125",
+          "shuffle_b128_p150",
+          "shuffle_b128_p175",
+          "shuffle_b128_p200",
+          "shuffle_b128_p225",
+          "shuffle_b128_p250",
+          "shuffle_b256_p125",
+          "shuffle_b256_p150",
+          "shuffle_b256_p175"
+        ]
+      },
+      "strict_recommended": [
+        "shuffle_b128_p100",
+        "shuffle_b128_p125",
+        "shuffle_b128_p150",
+        "shuffle_b256_p175"
+      ],
+      "strict_recommended_all_weights": [
+        "shuffle_b128_p100",
+        "shuffle_b128_p125",
+        "shuffle_b128_p150",
+        "shuffle_b256_p175"
+      ],
+      "mean_time_s": 1947.0338412698413
+    },
+    "checkpoint_30min_no_recovery": {
+      "eligible": 56,
+      "strict_eligible": 56,
+      "completed_paths": 315,
+      "total_paths": 343,
+      "changed_labels": 0,
+      "labels": {
+        "A": 10,
+        "B": 10,
+        "C": 17,
+        "D": 7,
+        "E": 12
+      },
+      "methods": {
+        "M1": [
+          "shuffle_b128_p100",
+          "shuffle_b128_p125",
+          "shuffle_b128_p150",
+          "shuffle_b128_p175",
+          "shuffle_b128_p200",
+          "shuffle_b128_p225",
+          "shuffle_b128_p250",
+          "shuffle_b256_p125",
+          "shuffle_b256_p150",
+          "shuffle_b256_p175"
+        ],
+        "M2": [
+          "shuffle_b128_p100",
+          "shuffle_b128_p125",
+          "shuffle_b128_p150",
+          "shuffle_b128_p175",
+          "shuffle_b128_p200",
+          "shuffle_b128_p225",
+          "shuffle_b128_p250",
+          "shuffle_b256_p125",
+          "shuffle_b256_p150",
+          "shuffle_b256_p175"
+        ],
+        "M3": [
+          "shuffle_b128_p100",
+          "shuffle_b128_p125",
+          "shuffle_b128_p150",
+          "shuffle_b128_p175",
+          "shuffle_b128_p200",
+          "shuffle_b128_p225",
+          "shuffle_b128_p250",
+          "shuffle_b256_p125",
+          "shuffle_b256_p150",
+          "shuffle_b256_p175"
+        ]
+      },
+      "strict_recommended": [
+        "shuffle_b128_p100",
+        "shuffle_b128_p125",
+        "shuffle_b128_p150",
+        "shuffle_b256_p175"
+      ],
+      "strict_recommended_all_weights": [
+        "shuffle_b128_p100",
+        "shuffle_b128_p125",
+        "shuffle_b128_p150",
+        "shuffle_b256_p175"
+      ],
+      "mean_time_s": null
+    },
+    "checkpoint_30min_checkpoint": {
+      "eligible": 63,
+      "strict_eligible": 63,
+      "completed_paths": 343,
+      "total_paths": 343,
+      "changed_labels": 1,
+      "labels": {
+        "A": 10,
+        "B": 10,
+        "C": 17,
+        "D": 6,
+        "E": 20
+      },
+      "methods": {
+        "M1": [
+          "shuffle_b128_p100",
+          "shuffle_b128_p125",
+          "shuffle_b128_p150",
+          "shuffle_b128_p175",
+          "shuffle_b128_p200",
+          "shuffle_b128_p225",
+          "shuffle_b128_p250",
+          "shuffle_b256_p125",
+          "shuffle_b256_p150",
+          "shuffle_b256_p175"
+        ],
+        "M2": [
+          "shuffle_b128_p100",
+          "shuffle_b128_p125",
+          "shuffle_b128_p150",
+          "shuffle_b128_p175",
+          "shuffle_b128_p200",
+          "shuffle_b128_p225",
+          "shuffle_b128_p250",
+          "shuffle_b256_p125",
+          "shuffle_b256_p150",
+          "shuffle_b256_p175"
+        ],
+        "M3": [
+          "shuffle_b128_p100",
+          "shuffle_b128_p125",
+          "shuffle_b128_p150",
+          "shuffle_b128_p175",
+          "shuffle_b128_p200",
+          "shuffle_b128_p225",
+          "shuffle_b128_p250",
+          "shuffle_b256_p125",
+          "shuffle_b256_p150",
+          "shuffle_b256_p175"
+        ]
+      },
+      "strict_recommended": [
+        "shuffle_b128_p100",
+        "shuffle_b128_p125",
+        "shuffle_b128_p150",
+        "shuffle_b256_p175"
+      ],
+      "strict_recommended_all_weights": [
+        "shuffle_b128_p100",
+        "shuffle_b128_p125",
+        "shuffle_b128_p150",
+        "shuffle_b256_p175"
+      ],
+      "mean_time_s": 2343.9306666666666
+    },
+    "checkpoint_cost_30s_no_recovery": {
+      "eligible": 56,
+      "strict_eligible": 56,
+      "completed_paths": 315,
+      "total_paths": 343,
+      "changed_labels": 0,
+      "labels": {
+        "A": 10,
+        "B": 10,
+        "C": 17,
+        "D": 7,
+        "E": 12
+      },
+      "methods": {
+        "M1": [
+          "shuffle_b128_p100",
+          "shuffle_b128_p125",
+          "shuffle_b128_p150",
+          "shuffle_b128_p175",
+          "shuffle_b128_p200",
+          "shuffle_b128_p225",
+          "shuffle_b128_p250",
+          "shuffle_b256_p125",
+          "shuffle_b256_p150",
+          "shuffle_b256_p175"
+        ],
+        "M2": [
+          "shuffle_b128_p100",
+          "shuffle_b128_p125",
+          "shuffle_b128_p150",
+          "shuffle_b128_p175",
+          "shuffle_b128_p200",
+          "shuffle_b128_p225",
+          "shuffle_b128_p250",
+          "shuffle_b256_p125",
+          "shuffle_b256_p150",
+          "shuffle_b256_p175"
+        ],
+        "M3": [
+          "shuffle_b128_p100",
+          "shuffle_b128_p125",
+          "shuffle_b128_p150",
+          "shuffle_b128_p175",
+          "shuffle_b128_p200",
+          "shuffle_b128_p225",
+          "shuffle_b128_p250",
+          "shuffle_b256_p125",
+          "shuffle_b256_p150",
+          "shuffle_b256_p175"
+        ]
+      },
+      "strict_recommended": [
+        "shuffle_b128_p100",
+        "shuffle_b128_p125",
+        "shuffle_b128_p150",
+        "shuffle_b256_p175"
+      ],
+      "strict_recommended_all_weights": [
+        "shuffle_b128_p100",
+        "shuffle_b128_p125",
+        "shuffle_b128_p150",
+        "shuffle_b256_p175"
+      ],
+      "mean_time_s": null
+    },
+    "checkpoint_cost_30s_checkpoint": {
+      "eligible": 63,
+      "strict_eligible": 63,
+      "completed_paths": 343,
+      "total_paths": 343,
+      "changed_labels": 7,
+      "labels": {
+        "A": 10,
+        "B": 10,
+        "C": 12,
+        "D": 10,
+        "E": 21
+      },
+      "methods": {
+        "M1": [
+          "shuffle_b128_p100",
+          "shuffle_b128_p125",
+          "shuffle_b128_p150",
+          "shuffle_b128_p175",
+          "shuffle_b128_p200",
+          "shuffle_b128_p225",
+          "shuffle_b128_p250",
+          "shuffle_b256_p125",
+          "shuffle_b256_p150",
+          "shuffle_b256_p175"
+        ],
+        "M2": [
+          "shuffle_b128_p100",
+          "shuffle_b128_p125",
+          "shuffle_b128_p150",
+          "shuffle_b128_p175",
+          "shuffle_b128_p200",
+          "shuffle_b128_p225",
+          "shuffle_b128_p250",
+          "shuffle_b256_p125",
+          "shuffle_b256_p150",
+          "shuffle_b256_p175"
+        ],
+        "M3": [
+          "shuffle_b128_p100",
+          "shuffle_b128_p125",
+          "shuffle_b128_p150",
+          "shuffle_b128_p175",
+          "shuffle_b128_p200",
+          "shuffle_b128_p225",
+          "shuffle_b128_p250",
+          "shuffle_b256_p125",
+          "shuffle_b256_p150",
+          "shuffle_b256_p175"
+        ]
+      },
+      "strict_recommended": [
+        "shuffle_b128_p100",
+        "shuffle_b128_p125",
+        "shuffle_b128_p150",
+        "shuffle_b256_p175"
+      ],
+      "strict_recommended_all_weights": [
+        "shuffle_b128_p100",
+        "shuffle_b128_p125",
+        "shuffle_b128_p150",
+        "shuffle_b256_p175"
+      ],
+      "mean_time_s": 2268.918761904762
+    },
+    "restart_120s_no_recovery": {
+      "eligible": 56,
+      "strict_eligible": 56,
+      "completed_paths": 315,
+      "total_paths": 343,
+      "changed_labels": 0,
+      "labels": {
+        "A": 10,
+        "B": 10,
+        "C": 17,
+        "D": 7,
+        "E": 12
+      },
+      "methods": {
+        "M1": [
+          "shuffle_b128_p100",
+          "shuffle_b128_p125",
+          "shuffle_b128_p150",
+          "shuffle_b128_p175",
+          "shuffle_b128_p200",
+          "shuffle_b128_p225",
+          "shuffle_b128_p250",
+          "shuffle_b256_p125",
+          "shuffle_b256_p150",
+          "shuffle_b256_p175"
+        ],
+        "M2": [
+          "shuffle_b128_p100",
+          "shuffle_b128_p125",
+          "shuffle_b128_p150",
+          "shuffle_b128_p175",
+          "shuffle_b128_p200",
+          "shuffle_b128_p225",
+          "shuffle_b128_p250",
+          "shuffle_b256_p125",
+          "shuffle_b256_p150",
+          "shuffle_b256_p175"
+        ],
+        "M3": [
+          "shuffle_b128_p100",
+          "shuffle_b128_p125",
+          "shuffle_b128_p150",
+          "shuffle_b128_p175",
+          "shuffle_b128_p200",
+          "shuffle_b128_p225",
+          "shuffle_b128_p250",
+          "shuffle_b256_p125",
+          "shuffle_b256_p150",
+          "shuffle_b256_p175"
+        ]
+      },
+      "strict_recommended": [
+        "shuffle_b128_p100",
+        "shuffle_b128_p125",
+        "shuffle_b128_p150",
+        "shuffle_b256_p175"
+      ],
+      "strict_recommended_all_weights": [
+        "shuffle_b128_p100",
+        "shuffle_b128_p125",
+        "shuffle_b128_p150",
+        "shuffle_b256_p175"
+      ],
+      "mean_time_s": null
+    },
+    "restart_120s_checkpoint": {
+      "eligible": 63,
+      "strict_eligible": 63,
+      "completed_paths": 343,
+      "total_paths": 343,
+      "changed_labels": 3,
+      "labels": {
+        "A": 10,
+        "B": 10,
+        "C": 15,
+        "D": 8,
+        "E": 20
+      },
+      "methods": {
+        "M1": [
+          "shuffle_b128_p100",
+          "shuffle_b128_p125",
+          "shuffle_b128_p150",
+          "shuffle_b128_p175",
+          "shuffle_b128_p200",
+          "shuffle_b128_p225",
+          "shuffle_b128_p250",
+          "shuffle_b256_p125",
+          "shuffle_b256_p150",
+          "shuffle_b256_p175"
+        ],
+        "M2": [
+          "shuffle_b128_p100",
+          "shuffle_b128_p125",
+          "shuffle_b128_p150",
+          "shuffle_b128_p175",
+          "shuffle_b128_p200",
+          "shuffle_b128_p225",
+          "shuffle_b128_p250",
+          "shuffle_b256_p125",
+          "shuffle_b256_p150",
+          "shuffle_b256_p175"
+        ],
+        "M3": [
+          "shuffle_b128_p100",
+          "shuffle_b128_p125",
+          "shuffle_b128_p150",
+          "shuffle_b128_p175",
+          "shuffle_b128_p200",
+          "shuffle_b128_p225",
+          "shuffle_b128_p250",
+          "shuffle_b256_p125",
+          "shuffle_b256_p150",
+          "shuffle_b256_p175"
+        ]
+      },
+      "strict_recommended": [
+        "shuffle_b128_p100",
+        "shuffle_b128_p125",
+        "shuffle_b128_p150",
+        "shuffle_b256_p175"
+      ],
+      "strict_recommended_all_weights": [
+        "shuffle_b128_p100",
+        "shuffle_b128_p125",
+        "shuffle_b128_p150",
+        "shuffle_b256_p175"
+      ],
+      "mean_time_s": 2256.478285714286
+    },
+    "half_window_start_no_recovery": {
+      "eligible": 56,
+      "strict_eligible": 56,
+      "completed_paths": 315,
+      "total_paths": 343,
+      "changed_labels": 0,
+      "labels": {
+        "A": 10,
+        "B": 10,
+        "C": 17,
+        "D": 7,
+        "E": 12
+      },
+      "methods": {
+        "M1": [
+          "shuffle_b128_p100",
+          "shuffle_b128_p125",
+          "shuffle_b128_p150",
+          "shuffle_b128_p175",
+          "shuffle_b128_p200",
+          "shuffle_b128_p225",
+          "shuffle_b128_p250",
+          "shuffle_b256_p125",
+          "shuffle_b256_p150",
+          "shuffle_b256_p175"
+        ],
+        "M2": [
+          "shuffle_b128_p100",
+          "shuffle_b128_p125",
+          "shuffle_b128_p150",
+          "shuffle_b128_p175",
+          "shuffle_b128_p200",
+          "shuffle_b128_p225",
+          "shuffle_b128_p250",
+          "shuffle_b256_p125",
+          "shuffle_b256_p150",
+          "shuffle_b256_p175"
+        ],
+        "M3": [
+          "shuffle_b128_p100",
+          "shuffle_b128_p125",
+          "shuffle_b128_p150",
+          "shuffle_b128_p175",
+          "shuffle_b128_p200",
+          "shuffle_b128_p225",
+          "shuffle_b128_p250",
+          "shuffle_b256_p125",
+          "shuffle_b256_p150",
+          "shuffle_b256_p175"
+        ]
+      },
+      "strict_recommended": [
+        "shuffle_b128_p100",
+        "shuffle_b128_p125",
+        "shuffle_b128_p150",
+        "shuffle_b256_p175"
+      ],
+      "strict_recommended_all_weights": [
+        "shuffle_b128_p100",
+        "shuffle_b128_p125",
+        "shuffle_b128_p150",
+        "shuffle_b256_p175"
+      ],
+      "mean_time_s": null
+    },
+    "half_window_start_checkpoint": {
+      "eligible": 63,
+      "strict_eligible": 63,
+      "completed_paths": 343,
+      "total_paths": 343,
+      "changed_labels": 3,
+      "labels": {
+        "A": 10,
+        "B": 10,
+        "C": 15,
+        "D": 8,
+        "E": 20
+      },
+      "methods": {
+        "M1": [
+          "shuffle_b128_p100",
+          "shuffle_b128_p125",
+          "shuffle_b128_p150",
+          "shuffle_b128_p175",
+          "shuffle_b128_p200",
+          "shuffle_b128_p225",
+          "shuffle_b128_p250",
+          "shuffle_b256_p125",
+          "shuffle_b256_p150",
+          "shuffle_b256_p175"
+        ],
+        "M2": [
+          "shuffle_b128_p100",
+          "shuffle_b128_p125",
+          "shuffle_b128_p150",
+          "shuffle_b128_p175",
+          "shuffle_b128_p200",
+          "shuffle_b128_p225",
+          "shuffle_b128_p250",
+          "shuffle_b256_p125",
+          "shuffle_b256_p150",
+          "shuffle_b256_p175"
+        ],
+        "M3": [
+          "shuffle_b128_p100",
+          "shuffle_b128_p125",
+          "shuffle_b128_p150",
+          "shuffle_b128_p175",
+          "shuffle_b128_p200",
+          "shuffle_b128_p225",
+          "shuffle_b128_p250",
+          "shuffle_b256_p125",
+          "shuffle_b256_p150",
+          "shuffle_b256_p175"
+        ]
+      },
+      "strict_recommended": [
+        "shuffle_b128_p100",
+        "shuffle_b128_p125",
+        "shuffle_b128_p150",
+        "shuffle_b256_p175"
+      ],
+      "strict_recommended_all_weights": [
+        "shuffle_b128_p100",
+        "shuffle_b128_p125",
+        "shuffle_b128_p150",
+        "shuffle_b256_p175"
+      ],
+      "mean_time_s": 2396.7560634920637
+    },
+    "combined_discussion_only": {
+      "eligible": 32,
+      "strict_eligible": 14,
+      "completed_paths": 343,
+      "total_paths": 343,
+      "changed_labels": 22,
+      "labels": {
+        "A": 0,
+        "B": 16,
+        "C": 14,
+        "D": 13,
+        "E": 20
+      },
+      "methods": {
+        "M1": [
+          "shuffle_b128_p100",
+          "shuffle_b128_p125",
+          "shuffle_b128_p150",
+          "shuffle_b128_p175",
+          "shuffle_b128_p200",
+          "shuffle_b128_p225",
+          "shuffle_b128_p250",
+          "shuffle_b256_p125",
+          "shuffle_b256_p150",
+          "shuffle_b256_p175"
+        ],
+        "M2": [
+          "shuffle_b128_p100",
+          "shuffle_b128_p125",
+          "shuffle_b128_p150",
+          "shuffle_b128_p175",
+          "shuffle_b128_p200",
+          "shuffle_b128_p225",
+          "shuffle_b128_p250",
+          "shuffle_b256_p125",
+          "shuffle_b256_p150",
+          "shuffle_b256_p175"
+        ],
+        "M3": [
+          "shuffle_b128_p100",
+          "shuffle_b128_p125",
+          "shuffle_b128_p150",
+          "shuffle_b128_p175",
+          "shuffle_b128_p200",
+          "shuffle_b128_p225",
+          "shuffle_b128_p250",
+          "shuffle_b256_p100",
+          "shuffle_b256_p125",
+          "shuffle_b256_p150",
+          "shuffle_b256_p175",
+          "shuffle_b256_p200",
+          "shuffle_b256_p225",
+          "shuffle_b256_p250",
+          "shuffle_b512_p100",
+          "shuffle_b512_p125"
+        ]
+      },
+      "strict_recommended": [
+        "shuffle_b128_p100",
+        "shuffle_b128_p125",
+        "shuffle_b128_p150"
+      ],
+      "strict_recommended_all_weights": [
+        "shuffle_b128_p100",
+        "shuffle_b128_p125",
+        "shuffle_b128_p150"
+      ],
+      "mean_time_s": 2246.478285714286
+    }
+  },
+  "missing": {
+    "time_s": {
+      "mean": {
+        "masks": 63,
+        "changed_labels": 37,
+        "changed_recommendations": 10,
+        "mean_absolute_error": 1904.148187403994
+      },
+      "median": {
+        "masks": 63,
+        "changed_labels": 39,
+        "changed_recommendations": 10,
+        "mean_absolute_error": 1513.326634920635
+      },
+      "omit": {
+        "masks": 63,
+        "changed_labels": 19,
+        "changed_recommendations": 3,
+        "mean_absolute_error": null
+      }
+    },
+    "energy_gpu_kwh": {
+      "mean": {
+        "masks": 63,
+        "changed_labels": 38,
+        "changed_recommendations": 10,
+        "mean_absolute_error": 0.0241475741028153
+      },
+      "median": {
+        "masks": 63,
+        "changed_labels": 41,
+        "changed_recommendations": 10,
+        "mean_absolute_error": 0.01972674293915993
+      },
+      "omit": {
+        "masks": 63,
+        "changed_labels": 19,
+        "changed_recommendations": 3,
+        "mean_absolute_error": null
+      }
+    }
+  },
+  "calibration": [
+    {
+      "excluded_batch": 8,
+      "donors": 56,
+      "changed_labels": 12,
+      "recommended": "shuffle_b128_p100;shuffle_b128_p125;shuffle_b128_p150;shuffle_b128_p175;shuffle_b128_p200;shuffle_b128_p225;shuffle_b128_p250;shuffle_b256_p150",
+      "recommendations_changed": 1
+    },
+    {
+      "excluded_batch": 16,
+      "donors": 56,
+      "changed_labels": 12,
+      "recommended": "shuffle_b128_p100;shuffle_b128_p125;shuffle_b128_p150;shuffle_b128_p175;shuffle_b128_p200;shuffle_b128_p225;shuffle_b128_p250;shuffle_b256_p150",
+      "recommendations_changed": 1
+    },
+    {
+      "excluded_batch": 32,
+      "donors": 56,
+      "changed_labels": 11,
+      "recommended": "shuffle_b128_p100;shuffle_b128_p125;shuffle_b128_p150;shuffle_b128_p175;shuffle_b128_p200;shuffle_b128_p225;shuffle_b128_p250;shuffle_b256_p150",
+      "recommendations_changed": 1
+    },
+    {
+      "excluded_batch": 64,
+      "donors": 56,
+      "changed_labels": 13,
+      "recommended": "shuffle_b128_p100;shuffle_b128_p125;shuffle_b128_p150;shuffle_b128_p175;shuffle_b128_p200;shuffle_b128_p225;shuffle_b128_p250;shuffle_b256_p150",
+      "recommendations_changed": 1
+    },
+    {
+      "excluded_batch": 128,
+      "donors": 56,
+      "changed_labels": 21,
+      "recommended": "shuffle_b128_p100;shuffle_b128_p125;shuffle_b128_p150;shuffle_b128_p175;shuffle_b128_p200;shuffle_b128_p225;shuffle_b128_p250;shuffle_b256_p100;shuffle_b256_p125;shuffle_b256_p150;shuffle_b256_p175;shuffle_b256_p200;shuffle_b256_p225;shuffle_b512_p150;shuffle_b512_p175",
+      "recommendations_changed": 1
+    },
+    {
+      "excluded_batch": 256,
+      "donors": 56,
+      "changed_labels": 20,
+      "recommended": "shuffle_b128_p100;shuffle_b128_p125;shuffle_b128_p150;shuffle_b128_p175;shuffle_b128_p200;shuffle_b128_p225;shuffle_b128_p250;shuffle_b256_p100;shuffle_b256_p125;shuffle_b256_p150;shuffle_b256_p175;shuffle_b256_p200;shuffle_b512_p150;shuffle_b512_p175",
+      "recommendations_changed": 1
+    },
+    {
+      "excluded_batch": 512,
+      "donors": 56,
+      "changed_labels": 14,
+      "recommended": "shuffle_b128_p100;shuffle_b128_p125;shuffle_b128_p150;shuffle_b128_p175;shuffle_b128_p200;shuffle_b128_p225;shuffle_b128_p250;shuffle_b256_p150;shuffle_b256_p175",
+      "recommendations_changed": 1
+    },
+    {
+      "excluded_batch": 1024,
+      "donors": 56,
+      "changed_labels": 12,
+      "recommended": "shuffle_b128_p100;shuffle_b128_p125;shuffle_b128_p150;shuffle_b128_p175;shuffle_b128_p200;shuffle_b128_p225;shuffle_b128_p250;shuffle_b256_p150",
+      "recommendations_changed": 1
+    },
+    {
+      "excluded_batch": 2048,
+      "donors": 56,
+      "changed_labels": 13,
+      "recommended": "shuffle_b128_p100;shuffle_b128_p125;shuffle_b128_p150;shuffle_b128_p175;shuffle_b128_p200;shuffle_b128_p225;shuffle_b128_p250;shuffle_b256_p150",
+      "recommendations_changed": 1
+    }
+  ],
+  "cross_context": {
+    "scope": [
+      "reference",
+      "budget_0.75",
+      "budget_1",
+      "budget_1.25",
+      "carbon_Kenya",
+      "carbon_Cameroon",
+      "carbon_South Africa",
+      "illustrative_supply_PV_low",
+      "illustrative_supply_PV_midpoint_assumption",
+      "illustrative_supply_PV_high",
+      "illustrative_supply_Diesel",
+      "outage_no_recovery",
+      "outage_checkpoint",
+      "on_1h_no_recovery",
+      "on_1h_checkpoint",
+      "on_4h_no_recovery",
+      "on_4h_checkpoint",
+      "checkpoint_30min_no_recovery",
+      "checkpoint_30min_checkpoint",
+      "checkpoint_cost_30s_no_recovery",
+      "checkpoint_cost_30s_checkpoint",
+      "restart_120s_no_recovery",
+      "restart_120s_checkpoint",
+      "half_window_start_no_recovery",
+      "half_window_start_checkpoint"
+    ],
+    "interpretation": "Intersection across separately evaluated complete-information cases; not simultaneous operation, unseen runs, calibration changes or missing-information masks.",
+    "strict_recommended": [
+      "shuffle_b128_p100",
+      "shuffle_b128_p125"
+    ],
+    "strict_recommended_all_weights": [
+      "shuffle_b128_p100",
+      "shuffle_b128_p125"
+    ],
+    "empty_strict_scenarios": []
+  }
+}

@@ -1,0 +1,1609 @@
+{
+  "task": "bert_squad",
+  "candidate_configurations": 49,
+  "calibrated_configurations": 49,
+  "thresholds": {
+    "time_s": [
+      7248.769,
+      7808.2142,
+      8608.776,
+      11284.843900000002
+    ],
+    "energy_gpu_kwh": [
+      0.3548089523552063,
+      0.39034788665354514,
+      0.40792257484038313,
+      0.43418902327550696
+    ],
+    "carbon_g": [
+      78.00794145586332,
+      85.8214960117618,
+      89.6854493818318,
+      95.46036446832969
+    ]
+  },
+  "energy_reference_kwh": 0.40455421661087004,
+  "profiles": {
+    "reference": {
+      "eligible": 49,
+      "strict_eligible": 49,
+      "completed_paths": 490,
+      "total_paths": 490,
+      "changed_labels": 0,
+      "labels": {
+        "A": 0,
+        "B": 12,
+        "C": 15,
+        "D": 17,
+        "E": 5
+      },
+      "methods": {
+        "M1": [
+          "bert_b12_p150",
+          "bert_b12_p175",
+          "bert_b12_p200",
+          "bert_b12_p225",
+          "bert_b16_p150",
+          "bert_b16_p175",
+          "bert_b16_p200",
+          "bert_b16_p225",
+          "bert_b8_p150",
+          "bert_b8_p175",
+          "bert_b8_p200",
+          "bert_b8_p225"
+        ],
+        "M2": [
+          "bert_b12_p150",
+          "bert_b12_p175",
+          "bert_b12_p200",
+          "bert_b12_p225",
+          "bert_b16_p150",
+          "bert_b16_p175",
+          "bert_b16_p200",
+          "bert_b16_p225",
+          "bert_b8_p150",
+          "bert_b8_p175",
+          "bert_b8_p200",
+          "bert_b8_p225"
+        ],
+        "M3": [
+          "bert_b12_p150",
+          "bert_b12_p175",
+          "bert_b12_p200",
+          "bert_b12_p225",
+          "bert_b16_p150",
+          "bert_b16_p175",
+          "bert_b16_p200",
+          "bert_b16_p225",
+          "bert_b8_p150",
+          "bert_b8_p175",
+          "bert_b8_p200",
+          "bert_b8_p225"
+        ]
+      },
+      "strict_recommended": [
+        "bert_b12_p150",
+        "bert_b12_p175",
+        "bert_b12_p200",
+        "bert_b12_p225",
+        "bert_b16_p175",
+        "bert_b16_p200",
+        "bert_b16_p225"
+      ],
+      "strict_recommended_all_weights": [],
+      "mean_time_s": 9218.7855
+    },
+    "budget_0.75": {
+      "eligible": 0,
+      "strict_eligible": 0,
+      "completed_paths": 490,
+      "total_paths": 490,
+      "changed_labels": 0,
+      "labels": {
+        "A": 0,
+        "B": 12,
+        "C": 15,
+        "D": 17,
+        "E": 5
+      },
+      "methods": {
+        "M1": [
+          "bert_b12_p150",
+          "bert_b12_p175",
+          "bert_b12_p200",
+          "bert_b12_p225",
+          "bert_b16_p150",
+          "bert_b16_p175",
+          "bert_b16_p200",
+          "bert_b16_p225",
+          "bert_b8_p150",
+          "bert_b8_p175",
+          "bert_b8_p200",
+          "bert_b8_p225"
+        ],
+        "M2": [],
+        "M3": []
+      },
+      "strict_recommended": [],
+      "strict_recommended_all_weights": [],
+      "mean_time_s": 9218.7855
+    },
+    "budget_1": {
+      "eligible": 25,
+      "strict_eligible": 4,
+      "completed_paths": 490,
+      "total_paths": 490,
+      "changed_labels": 0,
+      "labels": {
+        "A": 0,
+        "B": 12,
+        "C": 15,
+        "D": 17,
+        "E": 5
+      },
+      "methods": {
+        "M1": [
+          "bert_b12_p150",
+          "bert_b12_p175",
+          "bert_b12_p200",
+          "bert_b12_p225",
+          "bert_b16_p150",
+          "bert_b16_p175",
+          "bert_b16_p200",
+          "bert_b16_p225",
+          "bert_b8_p150",
+          "bert_b8_p175",
+          "bert_b8_p200",
+          "bert_b8_p225"
+        ],
+        "M2": [
+          "bert_b12_p150",
+          "bert_b12_p175",
+          "bert_b12_p200",
+          "bert_b12_p225",
+          "bert_b16_p150",
+          "bert_b16_p175",
+          "bert_b16_p200",
+          "bert_b16_p225",
+          "bert_b8_p150",
+          "bert_b8_p175",
+          "bert_b8_p200",
+          "bert_b8_p225"
+        ],
+        "M3": [
+          "bert_b12_p150",
+          "bert_b12_p175",
+          "bert_b12_p200",
+          "bert_b12_p225",
+          "bert_b16_p150",
+          "bert_b16_p175",
+          "bert_b16_p200",
+          "bert_b16_p225",
+          "bert_b8_p150",
+          "bert_b8_p175",
+          "bert_b8_p200",
+          "bert_b8_p225"
+        ]
+      },
+      "strict_recommended": [
+        "bert_b12_p150"
+      ],
+      "strict_recommended_all_weights": [
+        "bert_b12_p150"
+      ],
+      "mean_time_s": 9218.7855
+    },
+    "budget_1.25": {
+      "eligible": 49,
+      "strict_eligible": 37,
+      "completed_paths": 490,
+      "total_paths": 490,
+      "changed_labels": 0,
+      "labels": {
+        "A": 0,
+        "B": 12,
+        "C": 15,
+        "D": 17,
+        "E": 5
+      },
+      "methods": {
+        "M1": [
+          "bert_b12_p150",
+          "bert_b12_p175",
+          "bert_b12_p200",
+          "bert_b12_p225",
+          "bert_b16_p150",
+          "bert_b16_p175",
+          "bert_b16_p200",
+          "bert_b16_p225",
+          "bert_b8_p150",
+          "bert_b8_p175",
+          "bert_b8_p200",
+          "bert_b8_p225"
+        ],
+        "M2": [
+          "bert_b12_p150",
+          "bert_b12_p175",
+          "bert_b12_p200",
+          "bert_b12_p225",
+          "bert_b16_p150",
+          "bert_b16_p175",
+          "bert_b16_p200",
+          "bert_b16_p225",
+          "bert_b8_p150",
+          "bert_b8_p175",
+          "bert_b8_p200",
+          "bert_b8_p225"
+        ],
+        "M3": [
+          "bert_b12_p150",
+          "bert_b12_p175",
+          "bert_b12_p200",
+          "bert_b12_p225",
+          "bert_b16_p150",
+          "bert_b16_p175",
+          "bert_b16_p200",
+          "bert_b16_p225",
+          "bert_b8_p150",
+          "bert_b8_p175",
+          "bert_b8_p200",
+          "bert_b8_p225"
+        ]
+      },
+      "strict_recommended": [
+        "bert_b12_p150",
+        "bert_b12_p175",
+        "bert_b12_p200",
+        "bert_b12_p225",
+        "bert_b16_p175",
+        "bert_b16_p200",
+        "bert_b16_p225"
+      ],
+      "strict_recommended_all_weights": [],
+      "mean_time_s": 9218.7855
+    },
+    "carbon_Kenya": {
+      "eligible": 49,
+      "strict_eligible": 49,
+      "completed_paths": 490,
+      "total_paths": 490,
+      "changed_labels": 31,
+      "labels": {
+        "A": 3,
+        "B": 16,
+        "C": 24,
+        "D": 6,
+        "E": 0
+      },
+      "methods": {
+        "M1": [
+          "bert_b12_p150",
+          "bert_b12_p175",
+          "bert_b12_p200",
+          "bert_b12_p225",
+          "bert_b16_p150",
+          "bert_b16_p175",
+          "bert_b16_p200",
+          "bert_b16_p225",
+          "bert_b8_p150",
+          "bert_b8_p175",
+          "bert_b8_p200",
+          "bert_b8_p225"
+        ],
+        "M2": [
+          "bert_b12_p150",
+          "bert_b12_p175",
+          "bert_b12_p200",
+          "bert_b12_p225",
+          "bert_b16_p150",
+          "bert_b16_p175",
+          "bert_b16_p200",
+          "bert_b16_p225",
+          "bert_b8_p150",
+          "bert_b8_p175",
+          "bert_b8_p200",
+          "bert_b8_p225"
+        ],
+        "M3": [
+          "bert_b12_p200",
+          "bert_b16_p200",
+          "bert_b8_p200"
+        ]
+      },
+      "strict_recommended": [
+        "bert_b12_p200",
+        "bert_b16_p200"
+      ],
+      "strict_recommended_all_weights": [
+        "bert_b12_p200",
+        "bert_b16_p200"
+      ],
+      "mean_time_s": 9218.7855
+    },
+    "carbon_Cameroon": {
+      "eligible": 49,
+      "strict_eligible": 49,
+      "completed_paths": 490,
+      "total_paths": 490,
+      "changed_labels": 0,
+      "labels": {
+        "A": 0,
+        "B": 12,
+        "C": 15,
+        "D": 17,
+        "E": 5
+      },
+      "methods": {
+        "M1": [
+          "bert_b12_p150",
+          "bert_b12_p175",
+          "bert_b12_p200",
+          "bert_b12_p225",
+          "bert_b16_p150",
+          "bert_b16_p175",
+          "bert_b16_p200",
+          "bert_b16_p225",
+          "bert_b8_p150",
+          "bert_b8_p175",
+          "bert_b8_p200",
+          "bert_b8_p225"
+        ],
+        "M2": [
+          "bert_b12_p150",
+          "bert_b12_p175",
+          "bert_b12_p200",
+          "bert_b12_p225",
+          "bert_b16_p150",
+          "bert_b16_p175",
+          "bert_b16_p200",
+          "bert_b16_p225",
+          "bert_b8_p150",
+          "bert_b8_p175",
+          "bert_b8_p200",
+          "bert_b8_p225"
+        ],
+        "M3": [
+          "bert_b12_p150",
+          "bert_b12_p175",
+          "bert_b12_p200",
+          "bert_b12_p225",
+          "bert_b16_p150",
+          "bert_b16_p175",
+          "bert_b16_p200",
+          "bert_b16_p225",
+          "bert_b8_p150",
+          "bert_b8_p175",
+          "bert_b8_p200",
+          "bert_b8_p225"
+        ]
+      },
+      "strict_recommended": [
+        "bert_b12_p150",
+        "bert_b12_p175",
+        "bert_b12_p200",
+        "bert_b12_p225",
+        "bert_b16_p175",
+        "bert_b16_p200",
+        "bert_b16_p225"
+      ],
+      "strict_recommended_all_weights": [],
+      "mean_time_s": 9218.7855
+    },
+    "carbon_South Africa": {
+      "eligible": 49,
+      "strict_eligible": 49,
+      "completed_paths": 490,
+      "total_paths": 490,
+      "changed_labels": 18,
+      "labels": {
+        "A": 0,
+        "B": 3,
+        "C": 16,
+        "D": 24,
+        "E": 6
+      },
+      "methods": {
+        "M1": [
+          "bert_b12_p150",
+          "bert_b12_p175",
+          "bert_b12_p200",
+          "bert_b12_p225",
+          "bert_b16_p150",
+          "bert_b16_p175",
+          "bert_b16_p200",
+          "bert_b16_p225",
+          "bert_b8_p150",
+          "bert_b8_p175",
+          "bert_b8_p200",
+          "bert_b8_p225"
+        ],
+        "M2": [
+          "bert_b12_p150",
+          "bert_b12_p175",
+          "bert_b12_p200",
+          "bert_b12_p225",
+          "bert_b16_p150",
+          "bert_b16_p175",
+          "bert_b16_p200",
+          "bert_b16_p225",
+          "bert_b8_p150",
+          "bert_b8_p175",
+          "bert_b8_p200",
+          "bert_b8_p225"
+        ],
+        "M3": [
+          "bert_b12_p200",
+          "bert_b16_p200",
+          "bert_b8_p200"
+        ]
+      },
+      "strict_recommended": [
+        "bert_b12_p200",
+        "bert_b16_p200"
+      ],
+      "strict_recommended_all_weights": [
+        "bert_b12_p200",
+        "bert_b16_p200"
+      ],
+      "mean_time_s": 9218.7855
+    },
+    "illustrative_supply_PV_low": {
+      "eligible": 49,
+      "strict_eligible": 49,
+      "completed_paths": 490,
+      "total_paths": 490,
+      "changed_labels": 31,
+      "labels": {
+        "A": 3,
+        "B": 16,
+        "C": 24,
+        "D": 6,
+        "E": 0
+      },
+      "methods": {
+        "M1": [
+          "bert_b12_p150",
+          "bert_b12_p175",
+          "bert_b12_p200",
+          "bert_b12_p225",
+          "bert_b16_p150",
+          "bert_b16_p175",
+          "bert_b16_p200",
+          "bert_b16_p225",
+          "bert_b8_p150",
+          "bert_b8_p175",
+          "bert_b8_p200",
+          "bert_b8_p225"
+        ],
+        "M2": [
+          "bert_b12_p150",
+          "bert_b12_p175",
+          "bert_b12_p200",
+          "bert_b12_p225",
+          "bert_b16_p150",
+          "bert_b16_p175",
+          "bert_b16_p200",
+          "bert_b16_p225",
+          "bert_b8_p150",
+          "bert_b8_p175",
+          "bert_b8_p200",
+          "bert_b8_p225"
+        ],
+        "M3": [
+          "bert_b12_p200",
+          "bert_b16_p200",
+          "bert_b8_p200"
+        ]
+      },
+      "strict_recommended": [
+        "bert_b12_p200",
+        "bert_b16_p200"
+      ],
+      "strict_recommended_all_weights": [
+        "bert_b12_p200",
+        "bert_b16_p200"
+      ],
+      "mean_time_s": 9218.7855
+    },
+    "illustrative_supply_PV_midpoint_assumption": {
+      "eligible": 49,
+      "strict_eligible": 49,
+      "completed_paths": 490,
+      "total_paths": 490,
+      "changed_labels": 31,
+      "labels": {
+        "A": 3,
+        "B": 16,
+        "C": 24,
+        "D": 6,
+        "E": 0
+      },
+      "methods": {
+        "M1": [
+          "bert_b12_p150",
+          "bert_b12_p175",
+          "bert_b12_p200",
+          "bert_b12_p225",
+          "bert_b16_p150",
+          "bert_b16_p175",
+          "bert_b16_p200",
+          "bert_b16_p225",
+          "bert_b8_p150",
+          "bert_b8_p175",
+          "bert_b8_p200",
+          "bert_b8_p225"
+        ],
+        "M2": [
+          "bert_b12_p150",
+          "bert_b12_p175",
+          "bert_b12_p200",
+          "bert_b12_p225",
+          "bert_b16_p150",
+          "bert_b16_p175",
+          "bert_b16_p200",
+          "bert_b16_p225",
+          "bert_b8_p150",
+          "bert_b8_p175",
+          "bert_b8_p200",
+          "bert_b8_p225"
+        ],
+        "M3": [
+          "bert_b12_p200",
+          "bert_b16_p200",
+          "bert_b8_p200"
+        ]
+      },
+      "strict_recommended": [
+        "bert_b12_p200",
+        "bert_b16_p200"
+      ],
+      "strict_recommended_all_weights": [
+        "bert_b12_p200",
+        "bert_b16_p200"
+      ],
+      "mean_time_s": 9218.7855
+    },
+    "illustrative_supply_PV_high": {
+      "eligible": 49,
+      "strict_eligible": 49,
+      "completed_paths": 490,
+      "total_paths": 490,
+      "changed_labels": 31,
+      "labels": {
+        "A": 3,
+        "B": 16,
+        "C": 24,
+        "D": 6,
+        "E": 0
+      },
+      "methods": {
+        "M1": [
+          "bert_b12_p150",
+          "bert_b12_p175",
+          "bert_b12_p200",
+          "bert_b12_p225",
+          "bert_b16_p150",
+          "bert_b16_p175",
+          "bert_b16_p200",
+          "bert_b16_p225",
+          "bert_b8_p150",
+          "bert_b8_p175",
+          "bert_b8_p200",
+          "bert_b8_p225"
+        ],
+        "M2": [
+          "bert_b12_p150",
+          "bert_b12_p175",
+          "bert_b12_p200",
+          "bert_b12_p225",
+          "bert_b16_p150",
+          "bert_b16_p175",
+          "bert_b16_p200",
+          "bert_b16_p225",
+          "bert_b8_p150",
+          "bert_b8_p175",
+          "bert_b8_p200",
+          "bert_b8_p225"
+        ],
+        "M3": [
+          "bert_b12_p200",
+          "bert_b16_p200",
+          "bert_b8_p200"
+        ]
+      },
+      "strict_recommended": [
+        "bert_b12_p200",
+        "bert_b16_p200"
+      ],
+      "strict_recommended_all_weights": [
+        "bert_b12_p200",
+        "bert_b16_p200"
+      ],
+      "mean_time_s": 9218.7855
+    },
+    "illustrative_supply_Diesel": {
+      "eligible": 49,
+      "strict_eligible": 49,
+      "completed_paths": 490,
+      "total_paths": 490,
+      "changed_labels": 18,
+      "labels": {
+        "A": 0,
+        "B": 3,
+        "C": 16,
+        "D": 24,
+        "E": 6
+      },
+      "methods": {
+        "M1": [
+          "bert_b12_p150",
+          "bert_b12_p175",
+          "bert_b12_p200",
+          "bert_b12_p225",
+          "bert_b16_p150",
+          "bert_b16_p175",
+          "bert_b16_p200",
+          "bert_b16_p225",
+          "bert_b8_p150",
+          "bert_b8_p175",
+          "bert_b8_p200",
+          "bert_b8_p225"
+        ],
+        "M2": [
+          "bert_b12_p150",
+          "bert_b12_p175",
+          "bert_b12_p200",
+          "bert_b12_p225",
+          "bert_b16_p150",
+          "bert_b16_p175",
+          "bert_b16_p200",
+          "bert_b16_p225",
+          "bert_b8_p150",
+          "bert_b8_p175",
+          "bert_b8_p200",
+          "bert_b8_p225"
+        ],
+        "M3": [
+          "bert_b12_p200",
+          "bert_b16_p200",
+          "bert_b8_p200"
+        ]
+      },
+      "strict_recommended": [
+        "bert_b12_p200",
+        "bert_b16_p200"
+      ],
+      "strict_recommended_all_weights": [
+        "bert_b12_p200",
+        "bert_b16_p200"
+      ],
+      "mean_time_s": 9218.7855
+    },
+    "outage_no_recovery": {
+      "eligible": 0,
+      "strict_eligible": 0,
+      "completed_paths": 124,
+      "total_paths": 490,
+      "changed_labels": 0,
+      "labels": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "E": 0
+      },
+      "methods": {
+        "M1": [
+          "bert_b12_p150",
+          "bert_b12_p175",
+          "bert_b12_p200",
+          "bert_b12_p225",
+          "bert_b16_p150",
+          "bert_b16_p175",
+          "bert_b16_p200",
+          "bert_b16_p225",
+          "bert_b8_p150",
+          "bert_b8_p175",
+          "bert_b8_p200",
+          "bert_b8_p225"
+        ],
+        "M2": [],
+        "M3": []
+      },
+      "strict_recommended": [],
+      "strict_recommended_all_weights": [],
+      "mean_time_s": null
+    },
+    "outage_checkpoint": {
+      "eligible": 49,
+      "strict_eligible": 49,
+      "completed_paths": 490,
+      "total_paths": 490,
+      "changed_labels": 37,
+      "labels": {
+        "A": 0,
+        "B": 2,
+        "C": 11,
+        "D": 12,
+        "E": 24
+      },
+      "methods": {
+        "M1": [
+          "bert_b12_p150",
+          "bert_b12_p175",
+          "bert_b12_p200",
+          "bert_b12_p225",
+          "bert_b16_p150",
+          "bert_b16_p175",
+          "bert_b16_p200",
+          "bert_b16_p225",
+          "bert_b8_p150",
+          "bert_b8_p175",
+          "bert_b8_p200",
+          "bert_b8_p225"
+        ],
+        "M2": [
+          "bert_b12_p150",
+          "bert_b12_p175",
+          "bert_b12_p200",
+          "bert_b12_p225",
+          "bert_b16_p150",
+          "bert_b16_p175",
+          "bert_b16_p200",
+          "bert_b16_p225",
+          "bert_b8_p150",
+          "bert_b8_p175",
+          "bert_b8_p200",
+          "bert_b8_p225"
+        ],
+        "M3": [
+          "bert_b12_p200",
+          "bert_b16_p200"
+        ]
+      },
+      "strict_recommended": [
+        "bert_b16_p200"
+      ],
+      "strict_recommended_all_weights": [
+        "bert_b16_p200"
+      ],
+      "mean_time_s": 11563.377336734693
+    },
+    "on_1h_no_recovery": {
+      "eligible": 0,
+      "strict_eligible": 0,
+      "completed_paths": 0,
+      "total_paths": 490,
+      "changed_labels": 0,
+      "labels": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "E": 0
+      },
+      "methods": {
+        "M1": [
+          "bert_b12_p150",
+          "bert_b12_p175",
+          "bert_b12_p200",
+          "bert_b12_p225",
+          "bert_b16_p150",
+          "bert_b16_p175",
+          "bert_b16_p200",
+          "bert_b16_p225",
+          "bert_b8_p150",
+          "bert_b8_p175",
+          "bert_b8_p200",
+          "bert_b8_p225"
+        ],
+        "M2": [],
+        "M3": []
+      },
+      "strict_recommended": [],
+      "strict_recommended_all_weights": [],
+      "mean_time_s": null
+    },
+    "on_1h_checkpoint": {
+      "eligible": 49,
+      "strict_eligible": 49,
+      "completed_paths": 490,
+      "total_paths": 490,
+      "changed_labels": 44,
+      "labels": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "E": 49
+      },
+      "methods": {
+        "M1": [
+          "bert_b12_p150",
+          "bert_b12_p175",
+          "bert_b12_p200",
+          "bert_b12_p225",
+          "bert_b16_p150",
+          "bert_b16_p175",
+          "bert_b16_p200",
+          "bert_b16_p225",
+          "bert_b8_p150",
+          "bert_b8_p175",
+          "bert_b8_p200",
+          "bert_b8_p225"
+        ],
+        "M2": [
+          "bert_b12_p150",
+          "bert_b12_p175",
+          "bert_b12_p200",
+          "bert_b12_p225",
+          "bert_b16_p150",
+          "bert_b16_p175",
+          "bert_b16_p200",
+          "bert_b16_p225",
+          "bert_b8_p150",
+          "bert_b8_p175",
+          "bert_b8_p200",
+          "bert_b8_p225"
+        ],
+        "M3": [
+          "bert_b12_p100",
+          "bert_b12_p125",
+          "bert_b12_p150",
+          "bert_b12_p175",
+          "bert_b12_p200",
+          "bert_b12_p225",
+          "bert_b12_p250",
+          "bert_b16_p100",
+          "bert_b16_p125",
+          "bert_b16_p150",
+          "bert_b16_p175",
+          "bert_b16_p200",
+          "bert_b16_p225",
+          "bert_b16_p250",
+          "bert_b24_p100",
+          "bert_b24_p125",
+          "bert_b24_p150",
+          "bert_b24_p175",
+          "bert_b24_p200",
+          "bert_b24_p225",
+          "bert_b24_p250",
+          "bert_b32_p100",
+          "bert_b32_p125",
+          "bert_b32_p150",
+          "bert_b32_p175",
+          "bert_b32_p200",
+          "bert_b32_p225",
+          "bert_b32_p250",
+          "bert_b48_p100",
+          "bert_b48_p125",
+          "bert_b48_p150",
+          "bert_b48_p175",
+          "bert_b48_p200",
+          "bert_b48_p225",
+          "bert_b48_p250",
+          "bert_b56_p100",
+          "bert_b56_p125",
+          "bert_b56_p150",
+          "bert_b56_p175",
+          "bert_b56_p200",
+          "bert_b56_p225",
+          "bert_b56_p250",
+          "bert_b8_p100",
+          "bert_b8_p125",
+          "bert_b8_p150",
+          "bert_b8_p175",
+          "bert_b8_p200",
+          "bert_b8_p225",
+          "bert_b8_p250"
+        ]
+      },
+      "strict_recommended": [
+        "bert_b12_p150",
+        "bert_b12_p175",
+        "bert_b12_p200",
+        "bert_b12_p225",
+        "bert_b12_p250",
+        "bert_b16_p150",
+        "bert_b16_p200",
+        "bert_b16_p225"
+      ],
+      "strict_recommended_all_weights": [
+        "bert_b12_p150",
+        "bert_b16_p150"
+      ],
+      "mean_time_s": 16492.265091836736
+    },
+    "on_4h_no_recovery": {
+      "eligible": 41,
+      "strict_eligible": 41,
+      "completed_paths": 456,
+      "total_paths": 490,
+      "changed_labels": 0,
+      "labels": {
+        "A": 0,
+        "B": 12,
+        "C": 14,
+        "D": 14,
+        "E": 1
+      },
+      "methods": {
+        "M1": [
+          "bert_b12_p150",
+          "bert_b12_p175",
+          "bert_b12_p200",
+          "bert_b12_p225",
+          "bert_b16_p150",
+          "bert_b16_p175",
+          "bert_b16_p200",
+          "bert_b16_p225",
+          "bert_b8_p150",
+          "bert_b8_p175",
+          "bert_b8_p200",
+          "bert_b8_p225"
+        ],
+        "M2": [
+          "bert_b12_p150",
+          "bert_b12_p175",
+          "bert_b12_p200",
+          "bert_b12_p225",
+          "bert_b16_p150",
+          "bert_b16_p175",
+          "bert_b16_p200",
+          "bert_b16_p225",
+          "bert_b8_p150",
+          "bert_b8_p175",
+          "bert_b8_p200",
+          "bert_b8_p225"
+        ],
+        "M3": [
+          "bert_b12_p150",
+          "bert_b12_p175",
+          "bert_b12_p200",
+          "bert_b12_p225",
+          "bert_b16_p150",
+          "bert_b16_p175",
+          "bert_b16_p200",
+          "bert_b16_p225",
+          "bert_b8_p150",
+          "bert_b8_p175",
+          "bert_b8_p200",
+          "bert_b8_p225"
+        ]
+      },
+      "strict_recommended": [
+        "bert_b12_p150",
+        "bert_b12_p175",
+        "bert_b12_p200",
+        "bert_b12_p225",
+        "bert_b16_p175",
+        "bert_b16_p200",
+        "bert_b16_p225"
+      ],
+      "strict_recommended_all_weights": [],
+      "mean_time_s": null
+    },
+    "on_4h_checkpoint": {
+      "eligible": 49,
+      "strict_eligible": 49,
+      "completed_paths": 490,
+      "total_paths": 490,
+      "changed_labels": 2,
+      "labels": {
+        "A": 0,
+        "B": 12,
+        "C": 14,
+        "D": 17,
+        "E": 6
+      },
+      "methods": {
+        "M1": [
+          "bert_b12_p150",
+          "bert_b12_p175",
+          "bert_b12_p200",
+          "bert_b12_p225",
+          "bert_b16_p150",
+          "bert_b16_p175",
+          "bert_b16_p200",
+          "bert_b16_p225",
+          "bert_b8_p150",
+          "bert_b8_p175",
+          "bert_b8_p200",
+          "bert_b8_p225"
+        ],
+        "M2": [
+          "bert_b12_p150",
+          "bert_b12_p175",
+          "bert_b12_p200",
+          "bert_b12_p225",
+          "bert_b16_p150",
+          "bert_b16_p175",
+          "bert_b16_p200",
+          "bert_b16_p225",
+          "bert_b8_p150",
+          "bert_b8_p175",
+          "bert_b8_p200",
+          "bert_b8_p225"
+        ],
+        "M3": [
+          "bert_b12_p150",
+          "bert_b12_p175",
+          "bert_b12_p200",
+          "bert_b12_p225",
+          "bert_b16_p150",
+          "bert_b16_p175",
+          "bert_b16_p200",
+          "bert_b16_p225",
+          "bert_b8_p150",
+          "bert_b8_p175",
+          "bert_b8_p200",
+          "bert_b8_p225"
+        ]
+      },
+      "strict_recommended": [
+        "bert_b12_p150",
+        "bert_b12_p175",
+        "bert_b12_p200",
+        "bert_b12_p225",
+        "bert_b16_p175",
+        "bert_b16_p200",
+        "bert_b16_p225"
+      ],
+      "strict_recommended_all_weights": [],
+      "mean_time_s": 9511.387540816326
+    },
+    "checkpoint_30min_no_recovery": {
+      "eligible": 0,
+      "strict_eligible": 0,
+      "completed_paths": 124,
+      "total_paths": 490,
+      "changed_labels": 0,
+      "labels": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "E": 0
+      },
+      "methods": {
+        "M1": [
+          "bert_b12_p150",
+          "bert_b12_p175",
+          "bert_b12_p200",
+          "bert_b12_p225",
+          "bert_b16_p150",
+          "bert_b16_p175",
+          "bert_b16_p200",
+          "bert_b16_p225",
+          "bert_b8_p150",
+          "bert_b8_p175",
+          "bert_b8_p200",
+          "bert_b8_p225"
+        ],
+        "M2": [],
+        "M3": []
+      },
+      "strict_recommended": [],
+      "strict_recommended_all_weights": [],
+      "mean_time_s": null
+    },
+    "checkpoint_30min_checkpoint": {
+      "eligible": 49,
+      "strict_eligible": 49,
+      "completed_paths": 490,
+      "total_paths": 490,
+      "changed_labels": 42,
+      "labels": {
+        "A": 0,
+        "B": 1,
+        "C": 7,
+        "D": 9,
+        "E": 32
+      },
+      "methods": {
+        "M1": [
+          "bert_b12_p150",
+          "bert_b12_p175",
+          "bert_b12_p200",
+          "bert_b12_p225",
+          "bert_b16_p150",
+          "bert_b16_p175",
+          "bert_b16_p200",
+          "bert_b16_p225",
+          "bert_b8_p150",
+          "bert_b8_p175",
+          "bert_b8_p200",
+          "bert_b8_p225"
+        ],
+        "M2": [
+          "bert_b12_p150",
+          "bert_b12_p175",
+          "bert_b12_p200",
+          "bert_b12_p225",
+          "bert_b16_p150",
+          "bert_b16_p175",
+          "bert_b16_p200",
+          "bert_b16_p225",
+          "bert_b8_p150",
+          "bert_b8_p175",
+          "bert_b8_p200",
+          "bert_b8_p225"
+        ],
+        "M3": [
+          "bert_b16_p200"
+        ]
+      },
+      "strict_recommended": [
+        "bert_b16_p200"
+      ],
+      "strict_recommended_all_weights": [
+        "bert_b16_p200"
+      ],
+      "mean_time_s": 12454.234479591836
+    },
+    "checkpoint_cost_30s_no_recovery": {
+      "eligible": 0,
+      "strict_eligible": 0,
+      "completed_paths": 124,
+      "total_paths": 490,
+      "changed_labels": 0,
+      "labels": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "E": 0
+      },
+      "methods": {
+        "M1": [
+          "bert_b12_p150",
+          "bert_b12_p175",
+          "bert_b12_p200",
+          "bert_b12_p225",
+          "bert_b16_p150",
+          "bert_b16_p175",
+          "bert_b16_p200",
+          "bert_b16_p225",
+          "bert_b8_p150",
+          "bert_b8_p175",
+          "bert_b8_p200",
+          "bert_b8_p225"
+        ],
+        "M2": [],
+        "M3": []
+      },
+      "strict_recommended": [],
+      "strict_recommended_all_weights": [],
+      "mean_time_s": null
+    },
+    "checkpoint_cost_30s_checkpoint": {
+      "eligible": 49,
+      "strict_eligible": 49,
+      "completed_paths": 490,
+      "total_paths": 490,
+      "changed_labels": 41,
+      "labels": {
+        "A": 0,
+        "B": 0,
+        "C": 9,
+        "D": 14,
+        "E": 26
+      },
+      "methods": {
+        "M1": [
+          "bert_b12_p150",
+          "bert_b12_p175",
+          "bert_b12_p200",
+          "bert_b12_p225",
+          "bert_b16_p150",
+          "bert_b16_p175",
+          "bert_b16_p200",
+          "bert_b16_p225",
+          "bert_b8_p150",
+          "bert_b8_p175",
+          "bert_b8_p200",
+          "bert_b8_p225"
+        ],
+        "M2": [
+          "bert_b12_p150",
+          "bert_b12_p175",
+          "bert_b12_p200",
+          "bert_b12_p225",
+          "bert_b16_p150",
+          "bert_b16_p175",
+          "bert_b16_p200",
+          "bert_b16_p225",
+          "bert_b8_p150",
+          "bert_b8_p175",
+          "bert_b8_p200",
+          "bert_b8_p225"
+        ],
+        "M3": [
+          "bert_b12_p150",
+          "bert_b12_p200",
+          "bert_b12_p225",
+          "bert_b16_p150",
+          "bert_b16_p200",
+          "bert_b16_p225",
+          "bert_b16_p250",
+          "bert_b8_p150",
+          "bert_b8_p200"
+        ]
+      },
+      "strict_recommended": [
+        "bert_b12_p150",
+        "bert_b16_p200",
+        "bert_b16_p225",
+        "bert_b16_p250"
+      ],
+      "strict_recommended_all_weights": [
+        "bert_b16_p200"
+      ],
+      "mean_time_s": 11848.254887755102
+    },
+    "restart_120s_no_recovery": {
+      "eligible": 0,
+      "strict_eligible": 0,
+      "completed_paths": 124,
+      "total_paths": 490,
+      "changed_labels": 0,
+      "labels": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "E": 0
+      },
+      "methods": {
+        "M1": [
+          "bert_b12_p150",
+          "bert_b12_p175",
+          "bert_b12_p200",
+          "bert_b12_p225",
+          "bert_b16_p150",
+          "bert_b16_p175",
+          "bert_b16_p200",
+          "bert_b16_p225",
+          "bert_b8_p150",
+          "bert_b8_p175",
+          "bert_b8_p200",
+          "bert_b8_p225"
+        ],
+        "M2": [],
+        "M3": []
+      },
+      "strict_recommended": [],
+      "strict_recommended_all_weights": [],
+      "mean_time_s": null
+    },
+    "restart_120s_checkpoint": {
+      "eligible": 49,
+      "strict_eligible": 49,
+      "completed_paths": 490,
+      "total_paths": 490,
+      "changed_labels": 38,
+      "labels": {
+        "A": 0,
+        "B": 2,
+        "C": 10,
+        "D": 13,
+        "E": 24
+      },
+      "methods": {
+        "M1": [
+          "bert_b12_p150",
+          "bert_b12_p175",
+          "bert_b12_p200",
+          "bert_b12_p225",
+          "bert_b16_p150",
+          "bert_b16_p175",
+          "bert_b16_p200",
+          "bert_b16_p225",
+          "bert_b8_p150",
+          "bert_b8_p175",
+          "bert_b8_p200",
+          "bert_b8_p225"
+        ],
+        "M2": [
+          "bert_b12_p150",
+          "bert_b12_p175",
+          "bert_b12_p200",
+          "bert_b12_p225",
+          "bert_b16_p150",
+          "bert_b16_p175",
+          "bert_b16_p200",
+          "bert_b16_p225",
+          "bert_b8_p150",
+          "bert_b8_p175",
+          "bert_b8_p200",
+          "bert_b8_p225"
+        ],
+        "M3": [
+          "bert_b12_p200",
+          "bert_b16_p200"
+        ]
+      },
+      "strict_recommended": [
+        "bert_b16_p200"
+      ],
+      "strict_recommended_all_weights": [
+        "bert_b16_p200"
+      ],
+      "mean_time_s": 11630.601826530612
+    },
+    "half_window_start_no_recovery": {
+      "eligible": 0,
+      "strict_eligible": 0,
+      "completed_paths": 124,
+      "total_paths": 490,
+      "changed_labels": 0,
+      "labels": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "E": 0
+      },
+      "methods": {
+        "M1": [
+          "bert_b12_p150",
+          "bert_b12_p175",
+          "bert_b12_p200",
+          "bert_b12_p225",
+          "bert_b16_p150",
+          "bert_b16_p175",
+          "bert_b16_p200",
+          "bert_b16_p225",
+          "bert_b8_p150",
+          "bert_b8_p175",
+          "bert_b8_p200",
+          "bert_b8_p225"
+        ],
+        "M2": [],
+        "M3": []
+      },
+      "strict_recommended": [],
+      "strict_recommended_all_weights": [],
+      "mean_time_s": null
+    },
+    "half_window_start_checkpoint": {
+      "eligible": 49,
+      "strict_eligible": 49,
+      "completed_paths": 490,
+      "total_paths": 490,
+      "changed_labels": 43,
+      "labels": {
+        "A": 0,
+        "B": 0,
+        "C": 2,
+        "D": 12,
+        "E": 35
+      },
+      "methods": {
+        "M1": [
+          "bert_b12_p150",
+          "bert_b12_p175",
+          "bert_b12_p200",
+          "bert_b12_p225",
+          "bert_b16_p150",
+          "bert_b16_p175",
+          "bert_b16_p200",
+          "bert_b16_p225",
+          "bert_b8_p150",
+          "bert_b8_p175",
+          "bert_b8_p200",
+          "bert_b8_p225"
+        ],
+        "M2": [
+          "bert_b12_p150",
+          "bert_b12_p175",
+          "bert_b12_p200",
+          "bert_b12_p225",
+          "bert_b16_p150",
+          "bert_b16_p175",
+          "bert_b16_p200",
+          "bert_b16_p225",
+          "bert_b8_p150",
+          "bert_b8_p175",
+          "bert_b8_p200",
+          "bert_b8_p225"
+        ],
+        "M3": [
+          "bert_b12_p150",
+          "bert_b8_p150"
+        ]
+      },
+      "strict_recommended": [
+        "bert_b12_p150"
+      ],
+      "strict_recommended_all_weights": [
+        "bert_b12_p150"
+      ],
+      "mean_time_s": 12809.254887755102
+    },
+    "combined_discussion_only": {
+      "eligible": 15,
+      "strict_eligible": 0,
+      "completed_paths": 490,
+      "total_paths": 490,
+      "changed_labels": 40,
+      "labels": {
+        "A": 0,
+        "B": 0,
+        "C": 9,
+        "D": 15,
+        "E": 25
+      },
+      "methods": {
+        "M1": [
+          "bert_b12_p150",
+          "bert_b12_p175",
+          "bert_b12_p200",
+          "bert_b12_p225",
+          "bert_b16_p150",
+          "bert_b16_p175",
+          "bert_b16_p200",
+          "bert_b16_p225",
+          "bert_b8_p150",
+          "bert_b8_p175",
+          "bert_b8_p200",
+          "bert_b8_p225"
+        ],
+        "M2": [
+          "bert_b12_p150",
+          "bert_b12_p175",
+          "bert_b12_p200",
+          "bert_b16_p150",
+          "bert_b16_p175",
+          "bert_b16_p200",
+          "bert_b8_p150",
+          "bert_b8_p175",
+          "bert_b8_p200"
+        ],
+        "M3": [
+          "bert_b12_p175",
+          "bert_b12_p200",
+          "bert_b16_p200",
+          "bert_b8_p175"
+        ]
+      },
+      "strict_recommended": [],
+      "strict_recommended_all_weights": [],
+      "mean_time_s": 11563.377336734693
+    }
+  },
+  "missing": {
+    "time_s": {
+      "mean": {
+        "masks": 49,
+        "changed_labels": 32,
+        "changed_recommendations": 12,
+        "mean_absolute_error": 2081.2272500000004
+      },
+      "median": {
+        "masks": 49,
+        "changed_labels": 27,
+        "changed_recommendations": 10,
+        "mean_absolute_error": 1836.9091275510204
+      },
+      "omit": {
+        "masks": 49,
+        "changed_labels": 39,
+        "changed_recommendations": 20,
+        "mean_absolute_error": null
+      }
+    },
+    "energy_gpu_kwh": {
+      "mean": {
+        "masks": 49,
+        "changed_labels": 31,
+        "changed_recommendations": 10,
+        "mean_absolute_error": 0.035218150604565374
+      },
+      "median": {
+        "masks": 49,
+        "changed_labels": 31,
+        "changed_recommendations": 10,
+        "mean_absolute_error": 0.03517996731843994
+      },
+      "omit": {
+        "masks": 49,
+        "changed_labels": 35,
+        "changed_recommendations": 20,
+        "mean_absolute_error": null
+      }
+    }
+  },
+  "calibration": [
+    {
+      "excluded_batch": 8,
+      "donors": 42,
+      "changed_labels": 6,
+      "recommended": "bert_b16_p175",
+      "recommendations_changed": 1
+    },
+    {
+      "excluded_batch": 12,
+      "donors": 42,
+      "changed_labels": 8,
+      "recommended": "bert_b12_p200;bert_b16_p175",
+      "recommendations_changed": 1
+    },
+    {
+      "excluded_batch": 16,
+      "donors": 42,
+      "changed_labels": 6,
+      "recommended": "bert_b12_p175;bert_b16_p175",
+      "recommendations_changed": 1
+    },
+    {
+      "excluded_batch": 24,
+      "donors": 42,
+      "changed_labels": 4,
+      "recommended": "bert_b12_p150;bert_b12_p175;bert_b12_p200;bert_b12_p225;bert_b16_p150;bert_b16_p175;bert_b16_p200;bert_b16_p225;bert_b8_p150;bert_b8_p175;bert_b8_p200;bert_b8_p225",
+      "recommendations_changed": 0
+    },
+    {
+      "excluded_batch": 32,
+      "donors": 42,
+      "changed_labels": 2,
+      "recommended": "bert_b12_p150;bert_b12_p175;bert_b12_p200;bert_b12_p225;bert_b16_p150;bert_b16_p175;bert_b16_p200;bert_b16_p225;bert_b8_p150;bert_b8_p175;bert_b8_p200;bert_b8_p225",
+      "recommendations_changed": 0
+    },
+    {
+      "excluded_batch": 48,
+      "donors": 42,
+      "changed_labels": 5,
+      "recommended": "bert_b12_p150;bert_b12_p175;bert_b12_p200;bert_b12_p225;bert_b16_p150;bert_b16_p175;bert_b16_p200;bert_b16_p225;bert_b8_p150;bert_b8_p175;bert_b8_p200;bert_b8_p225",
+      "recommendations_changed": 0
+    },
+    {
+      "excluded_batch": 56,
+      "donors": 42,
+      "changed_labels": 5,
+      "recommended": "bert_b12_p150;bert_b12_p175;bert_b12_p200;bert_b12_p225;bert_b16_p150;bert_b16_p175;bert_b16_p200;bert_b16_p225;bert_b8_p150;bert_b8_p175;bert_b8_p200;bert_b8_p225",
+      "recommendations_changed": 0
+    }
+  ],
+  "cross_context": {
+    "scope": [
+      "reference",
+      "budget_0.75",
+      "budget_1",
+      "budget_1.25",
+      "carbon_Kenya",
+      "carbon_Cameroon",
+      "carbon_South Africa",
+      "illustrative_supply_PV_low",
+      "illustrative_supply_PV_midpoint_assumption",
+      "illustrative_supply_PV_high",
+      "illustrative_supply_Diesel",
+      "outage_no_recovery",
+      "outage_checkpoint",
+      "on_1h_no_recovery",
+      "on_1h_checkpoint",
+      "on_4h_no_recovery",
+      "on_4h_checkpoint",
+      "checkpoint_30min_no_recovery",
+      "checkpoint_30min_checkpoint",
+      "checkpoint_cost_30s_no_recovery",
+      "checkpoint_cost_30s_checkpoint",
+      "restart_120s_no_recovery",
+      "restart_120s_checkpoint",
+      "half_window_start_no_recovery",
+      "half_window_start_checkpoint"
+    ],
+    "interpretation": "Intersection across separately evaluated complete-information cases; not simultaneous operation, unseen runs, calibration changes or missing-information masks.",
+    "strict_recommended": [],
+    "strict_recommended_all_weights": [],
+    "empty_strict_scenarios": [
+      "budget_0.75",
+      "outage_no_recovery",
+      "on_1h_no_recovery",
+      "checkpoint_30min_no_recovery",
+      "checkpoint_cost_30s_no_recovery",
+      "restart_120s_no_recovery",
+      "half_window_start_no_recovery"
+    ]
+  }
+}

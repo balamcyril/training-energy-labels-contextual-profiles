@@ -1,0 +1,58 @@
+{
+  "budget_mean": [
+    10,
+    32,
+    35
+  ],
+  "budget_all_paths": [
+    2,
+    14,
+    33
+  ],
+  "interruption_completion": [
+    63,
+    56,
+    63
+  ],
+  "carbon_labels": {
+    "A": [
+      12,
+      10,
+      0
+    ],
+    "B": [
+      17,
+      10,
+      16
+    ],
+    "C": [
+      14,
+      17,
+      16
+    ],
+    "D": [
+      13,
+      7,
+      12
+    ],
+    "E": [
+      7,
+      19,
+      19
+    ]
+  },
+  "missing_recommendation_changes": {
+    "mean": [
+      10,
+      10
+    ],
+    "median": [
+      10,
+      10
+    ],
+    "omit": [
+      3,
+      3
+    ]
+  }
+}

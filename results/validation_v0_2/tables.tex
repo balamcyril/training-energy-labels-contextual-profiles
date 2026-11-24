@@ -1,0 +1,35 @@
+% BEGIN GENERATED TABULAR: method_comparison
+\begin{tabular}{@{}llrrr@{}}
+\toprule
+Task & Context & M1 & M2 & M3 \\
+\midrule
+BERT/SQuAD & Tight budget & 12 (12, 0) & 0 (0, 0) & 0 (0, 0) \\
+ & Median budget & 12 (0, 5) & 12 (0, 5) & 12 (0, 5) \\
+ & Outages, no recovery & 12 (12, 0) & 0 (0, 0) & 0 (0, 0) \\
+ & Outages, checkpoints & 12 (0, 9) & 12 (0, 9) & 2 (0, 1) \\
+ & Kenyan factor & 12 (0, 5) & 12 (0, 5) & 3 (0, 1) \\
+ & South African factor & 12 (0, 5) & 12 (0, 5) & 3 (0, 1) \\
+\addlinespace
+ShuffleNet/CIFAR-100 & Tight budget & 10 (1, 6) & 9 (0, 6) & 9 (0, 6) \\
+ & Median budget & 10 (0, 6) & 10 (0, 6) & 10 (0, 6) \\
+ & Outages, no recovery & 10 (0, 6) & 10 (0, 6) & 10 (0, 6) \\
+ & Outages, checkpoints & 10 (0, 6) & 10 (0, 6) & 10 (0, 6) \\
+ & Kenyan factor & 10 (0, 6) & 10 (0, 6) & 12 (0, 6) \\
+ & South African factor & 10 (0, 6) & 10 (0, 6) & 16 (0, 10) \\
+\addlinespace
+\bottomrule
+\end{tabular}
+% END GENERATED TABULAR: method_comparison
+
+% BEGIN GENERATED TABULAR: imputation_comparison
+\begin{tabular}{@{}llrrrrr@{}}
+\toprule
+Task & Hidden cost & MAE mean & MAE median & Mean & Median & Omit \\
+\midrule
+BERT/SQuAD & Time (min) & 34.69 & 30.62 & 12/49 & 10/49 & 20/49 \\
+ & Energy (kWh) & 0.03522 & 0.03518 & 10/49 & 10/49 & 20/49 \\
+ShuffleNet/CIFAR-100 & Time (min) & 31.74 & 25.22 & 10/63 & 10/63 & 3/63 \\
+ & Energy (kWh) & 0.02415 & 0.01973 & 10/63 & 10/63 & 3/63 \\
+\bottomrule
+\end{tabular}
+% END GENERATED TABULAR: imputation_comparison

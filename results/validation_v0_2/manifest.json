@@ -1,0 +1,64 @@
+{
+  "version": "0.2",
+  "date": "2026-11-24",
+  "source_sha256": {
+    "config/protocol.json": "28d2f87d7b43f283bf6e6050cc6dab8d6360564273dab683c454cf07998b1761",
+    "config/validation_v0_2.json": "d35365a050cf7a228066323093756f22a194e920d6606bb6d50d98a20d4e189d",
+    "scripts/analyse_zeus_profiles.py": "cabfc36dc1d2d59d982af037c24b0789fc2d65252cdabf0aec10ff6219661c43",
+    "scripts/validate_revision.py": "a079c3b46a05e69daf79574c567c2502e694fbe1d49a9d491c9eec5bd87f395d",
+    "data/configurations.csv": "5ec4ee83d94a759dfe4a4659204ade68542331a277a310225559afd88c30bcd2",
+    "data/training_paths.csv": "b7887c57373845ddcc0bf7394062a34489ffc09bea82940169bdb5cf54e31ba9",
+    "data/sources/zeus/summary_train.csv": "076b35615349ee624403006e5ad67fd9ebda92af690c7750f8bb0c2ab92c0cf4",
+    "data/sources/zeus/summary_power_v100.csv": "f0b066dd1a451bd78f730e001ac3a7c411979bc7f0846f12c1a9fb604aa90628",
+    "data/sources/carbon/candidate_factors.csv": "65ee8c31375a2f3d252497a32833c69540d5271e2176692a05ecf06eb33ff988"
+  },
+  "agreement_with_protocol_0_1": "all original primary scenario and mean-imputation summaries agree",
+  "secondary_corpus": {
+    "task": {
+      "dataset": "cifar100",
+      "network": "shufflenetv2",
+      "optimizer": "adadelta",
+      "target_metric": 0.6,
+      "quality_unit": "validation accuracy, fraction",
+      "configuration_prefix": "shuffle",
+      "quality_eligibility": "All available matched learning trajectories must reach the published target. Retain failed trajectories and withhold completed-task means and labels for their configurations.",
+      "calibration": "Frozen quantiles of the configuration means satisfying the quality condition, separately from BERT/SQuAD.",
+      "budget": "Same multipliers of the task-specific median reference mean GPU energy.",
+      "recovery": "Same declared surrogate overheads as BERT; sensitivity assumptions, not measured ShuffleNet checkpoint costs."
+    },
+    "candidate_configurations": 70,
+    "quality_eligible_configurations": 63,
+    "unique_learning_trajectories": 54,
+    "reconstructed_rows": 378,
+    "successful_learning_trajectories": 53,
+    "repeats_per_batch": {
+      "8": 4,
+      "16": 5,
+      "32": 5,
+      "64": 5,
+      "128": 5,
+      "256": 5,
+      "512": 5,
+      "1024": 10,
+      "2048": 5,
+      "4096": 5
+    },
+    "failed_trajectories": [
+      {
+        "dataset": "cifar100",
+        "network": "shufflenetv2",
+        "batch_size": "4096",
+        "optimizer": "adadelta",
+        "learning_rate": "1e-1",
+        "run": "4",
+        "target_metric": "0.6",
+        "target_epoch": "nan"
+      }
+    ],
+    "unmatched_training_batches": [],
+    "source_sha256": {
+      "summary_train.csv": "076b35615349ee624403006e5ad67fd9ebda92af690c7750f8bb0c2ab92c0cf4",
+      "summary_power_v100.csv": "f0b066dd1a451bd78f730e001ac3a7c411979bc7f0846f12c1a9fb604aa90628"
+    }
+  }
+}

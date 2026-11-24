@@ -45,7 +45,8 @@ def grade_record(record, thresholds, weights):
 
 
 def simulate(work_s, power_w, checkpoint, *, on_s, off_s, horizon_s,
-             checkpoint_interval_work_s, checkpoint_cost_s, restart_cost_s):
+             checkpoint_interval_work_s, checkpoint_cost_s, restart_cost_s,
+             first_on_s=None):
     """Deterministic windows; progress and GPU active time are distinct.
 
     Incremental saves retain complete training state. A save interrupted before
@@ -56,11 +57,13 @@ def simulate(work_s, power_w, checkpoint, *, on_s, off_s, horizon_s,
             or horizon_s <= 0 or checkpoint_interval_work_s <= 0
             or checkpoint_cost_s < 0 or restart_cost_s < 0):
         raise ValueError("Invalid physical parameters")
+    if first_on_s is not None and not 0 < first_on_s <= on_s:
+        raise ValueError("First supply window must be positive and no longer than on_s")
     now = active = progress = saved = lost = 0.0
     interruptions = saves = 0
     eps = 1e-8
     while now < horizon_s-eps:
-        boundary = now + on_s
+        boundary = now + (first_on_s if first_on_s is not None and interruptions == 0 else on_s)
         end = min(boundary, horizon_s)
         if interruptions:
             spent = min(restart_cost_s, end-now)
